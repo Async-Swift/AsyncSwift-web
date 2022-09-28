@@ -16,11 +16,11 @@ export default function Home() {
         <Image
           src={logoFile}
           alt="AsyncSwift Community Logo"
-          width={250}
-          height={250}
+          width={180}
+          height={180}
         />
-        <h1>SyncSwift Conference</h1>
-        <h2>2022 11. 12</h2>
+        <h2>SyncSwift Conference</h2>
+        <h3>2022 11. 12</h3>
       </main>
     </>
   );
