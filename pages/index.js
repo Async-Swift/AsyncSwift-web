@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default () => {
+export default function Home() {
   return (
     <>
       <Head>
@@ -14,4 +14,4 @@ export default () => {
       </main>
     </>
   );
-};
+}
