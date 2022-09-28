@@ -36,6 +36,8 @@ export const globalStyles = (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow-wrap: break-word;
+        flex-wrap: wrap;
       }
     `}
   />
