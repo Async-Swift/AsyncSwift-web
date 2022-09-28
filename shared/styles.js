@@ -15,10 +15,13 @@ export const globalStyles = (
         font: inherit;
         vertical-align: baseline;
         background-color: rgba(0, 0, 0, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       main {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         color: white;
         margin: 0;
