@@ -1,15 +1,24 @@
-.SNSContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 8em;
-}
-
 .getInfo {
   display: flex;
   width: 20em;
   justify-content: space-between;
   align-items: center;
   color: #ff46c0;
+}
+
+.ticketInfo {
+  line-height: 2em;
+  font-size: 1em;
+}
+
+.ticketInfo h3 {
+  color: #ff46c0;
+}
+
+.SNSContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 8em;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,12 +34,30 @@
 
 @media screen and (max-width: 768px) {
   .InfoContainer {
-    width: calc(100% - 80px);
-    height: 28em;
-    margin-top: 50px;
+    height: 10em;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .ticketInfo {
+    line-height: 2em;
+    font-size: 0.5em;
+  }
+
+  .getInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.8em;
+  }
+
+  .SNSContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    width: 8em;
   }
 }
