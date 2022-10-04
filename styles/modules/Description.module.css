@@ -1,8 +1,32 @@
 .description {
-  width: 40em;
-  height: 20em;
+  width: 50em;
   margin-left: 40px;
-  margin-top: 50px;
-  font-size: 1em;
+}
+
+.description h1 {
+  font-size: 6em;
   font-weight: bold;
+}
+
+.description h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.location {
+  margin: 20px 0;
+  line-height: 2em;
+  font-size: 1.3em;
+}
+
+.location span {
+  color: #ff46c0;
+}
+
+@media screen and (max-width: 768px) {
+  .description h1 {
+    width: 10em;
+    font-size: 3.6em;
+  }
 }

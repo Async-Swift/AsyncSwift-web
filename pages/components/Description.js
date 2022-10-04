@@ -7,9 +7,9 @@ const Description = () => {
     <section className={styles.description}>
       <main>
         <h1>SyncSwift 2022 Conference</h1>
-        <div className="description">
+        <div>
           <h2>11월 12일 (토)</h2>
-          <div className="subDescription">
+          <div className={styles.location}>
             <div>체인지업 그라운드 포항</div>
             <Link href="https://www.changeupground.com/">
               <span style={{ cursor: "pointer" }}>
@@ -19,24 +19,6 @@ const Description = () => {
           </div>
         </div>
       </main>
-      <style jsx>{`
-        h1 {
-          font-weight: bold;
-          font-size: 4em;
-        }
-
-        .description > h2,
-        .description > div {
-          font-size: 1em;
-          font-weight: normal;
-          line-height: 2em;
-          margin-top: 20px;
-        }
-
-        .subDescription > span {
-          color: #ff46c0;
-        }
-      `}</style>
     </section>
   );
 };
