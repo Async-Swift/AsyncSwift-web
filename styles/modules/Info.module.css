@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 768px) {
   .InfoContainer {
-    height: 30em;
+    height: 15em;
     margin-left: 40px;
     display: flex;
     flex-direction: column;
