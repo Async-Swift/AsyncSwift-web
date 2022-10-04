@@ -1,0 +1,35 @@
+.SNSContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 8em;
+}
+
+.getInfo {
+  display: flex;
+  width: 20em;
+  justify-content: space-between;
+  align-items: center;
+  color: #ff46c0;
+}
+
+@media screen and (min-width: 768px) {
+  .InfoContainer {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    height: 25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .InfoContainer {
+    width: calc(100% - 80px);
+    height: 40%;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
