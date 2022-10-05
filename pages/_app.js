@@ -1,10 +1,11 @@
-import { globalStyles } from "../shared/styles";
+import reset from "../styles/global.css";
 
-const App = ({ Component, pageProps }) => (
-  <>
-    {globalStyles}
-    <Component {...pageProps} />
-  </>
-);
+const App = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
+};
 
 export default App;
