@@ -13,11 +13,10 @@ const Header = () => {
       <style jsx>
         {`
           header {
-            margin-left: 40px;
-            margin-top: 40px;
-            height: 120px;
-
-            font-weight: bold;
+            margin-left: 6rem;
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+            height: 60px;
           }
         `}
       </style>
