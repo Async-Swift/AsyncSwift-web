@@ -23,13 +23,6 @@ const Home = () => {
         <Header></Header>
         <Description></Description>
         <Info></Info>
-
-        <style jsx>{`
-          main {
-            width: 100vw;
-            height: 100vh;
-          }
-        `}</style>
       </main>
     </>
   );

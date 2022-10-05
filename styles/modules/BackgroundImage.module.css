@@ -1,3 +1,7 @@
+.backgroundImage {
+  width: 100vw;
+  height: 100vh;
+}
 @media screen and (min-width: 1100px) {
   .backgroundImage {
     background-image: url("../../public/backgroundObject.svg");

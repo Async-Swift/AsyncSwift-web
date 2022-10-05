@@ -1,0 +1,12 @@
+.header {
+  margin-left: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-left: 2.4rem;
+  }
+}
