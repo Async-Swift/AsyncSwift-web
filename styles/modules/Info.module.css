@@ -49,11 +49,11 @@
     position: fixed;
     bottom: 3.2rem;
 
-    height: 15em;
     margin-left: 2.4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 2.4rem;
   }
 
   .ticketInfo h3 {
