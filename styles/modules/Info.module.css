@@ -21,7 +21,8 @@
 .SNSContainer {
   display: flex;
   justify-content: space-between;
-  width: 9.6rem;
+  align-items: center;
+  width: 15rem;
 }
 
 /* 데스크탑 */
@@ -74,6 +75,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 12.8rem;
   }
 }

@@ -22,7 +22,6 @@ const SNS = () => {
       <div className={style.SNSContainer}>
         <a target="_blank" href={conferenceInfoUrl.notion} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="Notion logo"
             src={notion}
             width={32}
@@ -31,7 +30,6 @@ const SNS = () => {
         </a>
         <a target="_blank" href={conferenceInfoUrl.twitter} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="Twitter logo"
             src={twitter}
             width={32}
@@ -40,7 +38,6 @@ const SNS = () => {
         </a>
         <a target="_blank" href={conferenceInfoUrl.instagram} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="Instagram logo"
             src={instagram}
             width={32}
@@ -49,7 +46,6 @@ const SNS = () => {
         </a>
         <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="LinkedIn logo"
             src={linkedIn}
             width={32}

@@ -7,8 +7,6 @@ import Info from "./components/Info";
 import style from "../styles/modules/BackgroundImage.module.css";
 
 const Home = () => {
-  console.log(process.env.NEXT_PUBLIC_GA);
-
   return (
     <>
       <Head>
