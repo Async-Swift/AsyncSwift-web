@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoFile from "../../public/AsyncLogo.svg";
+import logoFile from "../../public/asyncLogo.svg";
 
 import style from "../../styles/modules/Header.module.css";
 
