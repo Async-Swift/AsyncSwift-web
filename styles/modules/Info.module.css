@@ -1,7 +1,7 @@
 .getInfo {
   display: flex;
   align-items: center;
-  color: #ff46c0;
+  color: #f647fa;
   font-size: 1.7rem;
 }
 
@@ -13,7 +13,7 @@
   margin-right: 3.2rem;
 }
 .ticketInfo h3 {
-  color: #ff46c0;
+  color: #f647fa;
   font-size: 2.4rem;
   font-weight: bold;
 }

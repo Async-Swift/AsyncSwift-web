@@ -3,10 +3,14 @@ import style from "../../styles/modules/Info.module.css";
 const Ticket = () => {
   return (
     <div className={style.ticketInfo}>
-      <a target="_blank" href="https://festa.io/events/2722" rel="noreferrer">
-        <h3>티켓 오픈 &rArr;</h3>
+      <a
+        target="_blank"
+        href="https://festa.io/events/ndCognG2SC4ZEj44osqurB"
+        rel="noreferrer"
+      >
+        <h3>티켓 오픈 &#10132; </h3>
       </a>
-      <div>10월 12일</div>
+      <div>10월 19일</div>
       <div>페스타</div>
     </div>
   );

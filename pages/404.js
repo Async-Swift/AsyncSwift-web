@@ -1,4 +1,5 @@
-import Header from './components/Header'
+import Header from "./components/Header";
+import styles from "../styles/modules/error.module.css";
 
 const Custom404 = () => {
   return (
@@ -10,8 +11,8 @@ const Custom404 = () => {
 };
 
 Error.getInitialProps = ({ res, err }) => {
-  const statusCode = res ? res.statusCode : err ? err.statusCode : 404
-  return { statusCode }
-}
+  const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
+  return { statusCode };
+};
 
 export default Custom404;
