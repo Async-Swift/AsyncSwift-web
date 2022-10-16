@@ -1,17 +1,23 @@
 import Image from "next/image";
-import logoFile from "../../public/AsyncLogo.svg";
+import Link from "next/link";
+
+import LogoFile from "../../public/AsyncLogo.svg";
 
 import style from "../../styles/modules/Header.module.css";
 
 const Header = () => {
   return (
     <header className={style.header}>
-      <Image
-        src={logoFile}
-        alt="AsyncSwift Community Logo"
-        width={62}
-        height={60}
-      />
+      <Link href="/">
+        <a>
+          <Image
+            src={LogoFile}
+            alt="AsyncSwift Community Logo"
+            width={62}
+            height={60}
+          />
+        </a>
+      </Link>
     </header>
   );
 };

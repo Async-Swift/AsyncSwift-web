@@ -11,11 +11,6 @@ const Description = () => {
           <h2>11월 12일 (토)</h2>
           <h2 className={styles.location}>
             <div>체인지업 그라운드 포항</div>
-            {/* <Link href="https://www.changeupground.com/">
-              <span style={{ cursor: "pointer" }}>
-                자세히 알아보기 &#10132;
-              </span>
-            </Link> */}
           </h2>
         </div>
       </main>
