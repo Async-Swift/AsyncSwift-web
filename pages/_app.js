@@ -2,7 +2,6 @@ import reset from "../styles/global.css";
 
 import Script from "next/script";
 import { useRouter } from "next/router";
-
 import { useEffect } from "react";
 
 import * as gtag from "../lib/gtag";
