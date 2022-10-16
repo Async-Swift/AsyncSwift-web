@@ -1,5 +1,4 @@
-
-import HeadMeta from './components/HeadMeta';
+import HeadMeta from "./components/HeadMeta";
 import Header from "./components/Header";
 import Description from "./components/Description";
 import Info from "./components/Info";
