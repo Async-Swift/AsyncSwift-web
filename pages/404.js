@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import HeadMeta from "./components/HeadMeta";
 import styles from "../styles/modules/error.module.css";
 
 const Custom404 = () => {
