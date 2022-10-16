@@ -1,45 +1,57 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import notion from "../../public/notion.svg";
 import twitter from "../../public/twitter.svg";
 import instagram from "../../public/instagram.svg";
+import linkedIn from "../../public/linkedIn.svg";
 
 import style from "../../styles/modules/Info.module.css";
+
 const SNS = () => {
+  const conferenceInfoUrl = {
+    notion:
+      "https://unnnyong.notion.site/AsyncSwift-9baba57eb8f8416d877bd5d2aba4a62d",
+    instagram: "https://www.instagram.com/asyncswift/",
+    twitter: "https://twitter.com/AsyncSwift",
+    linkedIn: "https://www.linkedin.com/company/async-swift/",
+  };
+
   return (
     <div className={style.getInfo}>
       <h4>To get latest information</h4>
       <div className={style.SNSContainer}>
-        <Link href="https://unnnyong.notion.site/AsyncSwift-9baba57eb8f8416d877bd5d2aba4a62d">
+        <a target="_blank" href={conferenceInfoUrl.notion} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="Notion logo"
             src={notion}
             width={32}
             height={32}
           />
-        </Link>
-
-        <Link href="https://twitter.com/AsyncSwift">
+        </a>
+        <a target="_blank" href={conferenceInfoUrl.twitter} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="Twitter logo"
             src={twitter}
             width={32}
             height={32}
           />
-        </Link>
-
-        <Link href="https://www.instagram.com/asyncswift/">
+        </a>
+        <a target="_blank" href={conferenceInfoUrl.instagram} rel="noreferrer">
           <Image
-            style={{ cursor: "pointer" }}
             alt="Instagram logo"
             src={instagram}
             width={32}
             height={32}
           />
-        </Link>
+        </a>
+        <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
+          <Image
+            alt="LinkedIn logo"
+            src={linkedIn}
+            width={32}
+            height={32}
+          />
+        </a>
       </div>
     </div>
   );
