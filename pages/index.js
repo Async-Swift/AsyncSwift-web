@@ -12,8 +12,6 @@ const Home = () => {
 
       <main className={style.backgroundImage}>
         <Header></Header>
-        <Description></Description>
-        <Info></Info>
       </main>
     </>
   );
