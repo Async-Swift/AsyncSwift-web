@@ -1,27 +1,17 @@
 .description {
-  width: 50rem;
-  margin-left: 6rem;
+  margin: 0 auto;
+  width: 118rem;
+  text-align: center;
 }
 
-.description h1 {
-  font-size: 6.4rem;
-  font-weight: bold;
-  margin-bottom: 4rem;
+.description h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #1920ff;
 }
 
-.description h2 {
-  font-size: 2.4rem;
-  line-height: 160%;
-  font-weight: bold;
-}
-
-.location {
-  font-size: 2.4rem;
-  line-height: 160%;
-}
-
-.location span {
-  color: #ff46c0;
+.subScription {
+  margin-top: 4rem;
 }
 
 /* 데스크탑 */

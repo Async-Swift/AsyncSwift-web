@@ -1,8 +1,5 @@
 .header {
-  margin-left: 6rem;
-  margin-top: 4rem;
-  margin-bottom: 6rem;
-  height: 60px;
+  height: 100vh;
 }
 
 @media screen and (max-width: 768px) {

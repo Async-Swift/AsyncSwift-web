@@ -1,18 +1,18 @@
 import HeadMeta from "./components/HeadMeta";
 import Header from "./components/Header";
-import Description from "./components/Description";
-import Info from "./components/Info";
 
 import style from "../styles/modules/BackgroundImage.module.css";
+import Main from "./Main/Main";
 
 const Home = () => {
   return (
     <>
       <HeadMeta />
 
-      <main className={style.backgroundImage}>
+      <div>
         <Header></Header>
-      </main>
+        <Main></Main>
+      </div>
     </>
   );
 };

@@ -1,6 +1,11 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import LogoFile from "../../public/AsyncLogo.svg";
+
 const Footer = () => {
   return (
-    <header className={style.header}>
+    <footer>
       <Link href="/">
         <a>
           <Image
@@ -11,7 +16,9 @@ const Footer = () => {
           />
         </a>
       </Link>
-    </header>
+      <div> &copy; 2022.AsyncSwift all rights reserved.</div>
+      <div> &copy; contect us: asyncswift@gmail.com</div>
+    </footer>
   );
 };
 
