@@ -18,6 +18,7 @@ const SpeakerGrid = ({ sessionTitle, speakers }) => {
                   alt="AsyncSwift Community Logo"
                   width={180}
                   height={180}
+                  priority
                 />
               </div>
               <SpeakerProfile
