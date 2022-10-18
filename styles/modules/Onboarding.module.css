@@ -4,7 +4,7 @@
 .onboarding {
   padding-left: 4rem;
   height: 120vh;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
 }
 
 .onboarding div {
@@ -20,7 +20,7 @@
 .container {
   justify-content: space-between;
   align-items: flex-end;
-  background-color: aqua;
+  /* background-color: aqua; */
   z-index: 3;
 }
 
@@ -54,14 +54,10 @@
   opacity: 1;
   z-index: 1;
 
-  /* opacity: 0.4; */
+  opacity: 0.4;
 }
-/* .onboarding p:hover {
+.onboarding p:hover {
   opacity: 1;
-} */
-
-.gridItemImages {
-  z-index: 1;
 }
 
 /* 데스크탑, 가로 배열 */
@@ -69,29 +65,80 @@
   .container {
     align-items: center;
   }
+
+  .onboarding article {
+    width: calc(100vw - 8rem);
+    height: 100vh;
+
+    background-image: url("../../public/birds/hBG.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+    z-index: 1;
+  }
 }
 
 /* 데스크탑, 세로 배열 */
-@media screen and (max-width: 1550px) and (min-width: 836px) {
+@media screen and (max-width: 1550px) and (min-width: 1274px) {
   .container {
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
   }
+  .onboarding article {
+    width: calc(100vw - 8rem);
+    height: 100vh;
+
+    background-image: url("../../public/birds/hBG.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1274px) and (min-width: 836px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .onboarding article {
+    width: calc(100vw - 8rem);
+    height: 100vh;
+
+    background-image: url("../../public/birds/hBG.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: 1;
+  }
 }
 
 /* 모바일 */
 @media screen and (max-width: 836px) {
+  .onboarding article {
+    width: calc(100vw - 2.4rem);
+    height: 100vh;
+
+    background-image: url("../../public/birds/vBG.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
   .onboarding {
     padding-left: 1.6rem;
     height: 120vh;
-    background-color: #1a1a1a;
   }
 
   .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
+    background-color: black;
   }
   .onboarding div {
     display: flex;
@@ -121,8 +168,9 @@
   }
   .onboarding h4 {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 3.2rem;
     margin-top: 0.6rem;
+    margin-bottom: 1.6rem;
   }
 
   .location {

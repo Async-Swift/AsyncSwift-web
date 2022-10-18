@@ -1,3 +1,7 @@
+.ticketInfo {
+  padding: 0.9rem 3.6rem;
+}
+
 .getInfo {
   display: flex;
   align-items: center;
