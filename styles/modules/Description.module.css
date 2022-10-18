@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 118rem;
   text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .description h3 {
@@ -48,5 +49,17 @@
   .location {
     line-height: 160%;
     font-size: 1.7em;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 3;
+    transform: none;
   }
 }

@@ -3,9 +3,11 @@ import Image from "next/image";
 
 import LogoFile from "../../public/AsyncLogo.svg";
 
+import styles from "../../styles/modules/Footer.module.css";
+
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <Link href="/">
         <a>
           <Image
@@ -16,8 +18,10 @@ const Footer = () => {
           />
         </a>
       </Link>
-      <div> &copy; 2022.AsyncSwift all rights reserved.</div>
-      <div> &copy; contect us: asyncswift@gmail.com</div>
+      <div className={styles.footerCopyright}>
+        <div>&copy; 2022.AsyncSwift all rights reserved.</div>
+        <div>contect us: asyncswift@gmail.com</div>
+      </div>
     </footer>
   );
 };
