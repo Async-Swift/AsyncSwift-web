@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SNS from "./SNS";
+import Ticket from "./Ticket";
 
 import LogoFile from "../../public/logo-horizental.svg";
 
@@ -22,6 +23,7 @@ const Header = () => {
         </Link>
         <SNS></SNS>
       </div>
+      {/* <Ticket></Ticket> */}
     </header>
   );
 };
