@@ -10,10 +10,10 @@ const Home = () => {
     <>
       <HeadMeta />
 
-      <main className={style.backgroundImage}>
+      <main>
         <Header></Header>
         <Onboarding></Onboarding>
-        <Info></Info>
+        {/* <Info></Info> */}
       </main>
     </>
   );
