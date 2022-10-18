@@ -11,7 +11,17 @@
 }
 
 .subScription {
+  font-size: 2.4rem;
   margin-top: 4rem;
+  line-height: 160%;
+  color: #afafaf;
+  font-weight: bold;
+  white-space: pre-wrap;
+}
+
+.subScription div {
+  font-size: 1.6rem;
+  white-space: pre-wrap;
 }
 
 /* 데스크탑 */

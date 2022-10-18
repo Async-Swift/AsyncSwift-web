@@ -9,7 +9,7 @@ const Main = () => {
     <main>
       <Description></Description>
       <Speaker></Speaker>
-      <AppInfo></AppInfo>
+      {/* <AppInfo></AppInfo> */}
       <Sponser></Sponser>
       <Footer></Footer>
     </main>
