@@ -1,9 +1,9 @@
 import SubScription from "../components/SubScription";
-import style from "../../styles/modules/Description.module.css";
+import styles from "../../styles/modules/Description.module.css";
 
 const Description = () => {
   return (
-    <section class={style.description}>
+    <section className={styles.description}>
       <h3>
         SyncSwift 2022 <br />
         Nesting, 둥지를 틀다.

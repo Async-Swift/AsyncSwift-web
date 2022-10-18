@@ -5,11 +5,13 @@ import Sponser from "./Sponser";
 import Footer from "../Footer/Footer";
 
 import styles from "../../styles/modules/Main.module.css";
+import Conference from "./Conference";
 
 const Main = () => {
   return (
     <main className={styles.main}>
       <Description></Description>
+      <Conference></Conference>
       <Speaker></Speaker>
       {/* <AppInfo></AppInfo> */}
       {/* <Sponser></Sponser> */}

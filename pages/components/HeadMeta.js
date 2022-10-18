@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 const HeadMeta = () => {
   return (
@@ -114,6 +115,7 @@ const HeadMeta = () => {
         content="/favicons/ms-icon-144x144.png"
       />
       <meta name="theme-color" content="#ffffff" />
+
       <title>SyncSwift 2022</title>
     </Head>
   );

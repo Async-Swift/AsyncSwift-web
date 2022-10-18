@@ -1,0 +1,31 @@
+.conferenceContainer {
+  margin: 0 auto;
+  margin-top: 38rem;
+  width: 118rem;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.conferenceContainer h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.conferenceContainer .open,
+.conferenceContainer .location {
+  font-size: 2.4rem;
+  margin-top: 4rem;
+  line-height: 160%;
+  color: #afafaf;
+  font-weight: bold;
+  white-space: pre-wrap;
+}
+
+.conferenceContainer .open > div,
+.conferenceContainer .location > div {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+  line-height: 160%;
+  color: white;
+  font-weight: bold;
+}
