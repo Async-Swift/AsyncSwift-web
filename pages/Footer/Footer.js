@@ -20,7 +20,7 @@ const Footer = () => {
       </Link>
       <div className={styles.footerCopyright}>
         <div>&copy; 2022.AsyncSwift all rights reserved.</div>
-        <div>contect us: asyncswift@gmail.com</div>
+        <div>contact us: asyncswift@gmail.com</div>
       </div>
     </footer>
   );
