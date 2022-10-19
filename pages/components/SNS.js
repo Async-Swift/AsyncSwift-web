@@ -4,53 +4,37 @@ import notion from "../../public/notion.svg";
 import twitter from "../../public/twitter.svg";
 import instagram from "../../public/instagram.svg";
 import linkedIn from "../../public/linkedIn.svg";
+import youtube from "../../public/youtube.svg";
 
 import style from "../../styles/modules/Info.module.css";
 
-const SNS = () => {
+const SNS = ({ locationClassName }) => {
   const conferenceInfoUrl = {
     notion:
       "https://unnnyong.notion.site/AsyncSwift-9baba57eb8f8416d877bd5d2aba4a62d",
     instagram: "https://www.instagram.com/asyncswift/",
     twitter: "https://twitter.com/AsyncSwift",
     linkedIn: "https://www.linkedin.com/company/async-swift/",
+    youtube: "https://www.youtube.com/channel/UCig96hmPxDF4D3II6idDoaw",
   };
 
   return (
-    <div className={style.getInfo}>
-      <h4>To get latest information</h4>
+    <div className={locationClassName || ""}>
       <div className={style.SNSContainer}>
         <a target="_blank" href={conferenceInfoUrl.notion} rel="noreferrer">
-          <Image
-            alt="Notion logo"
-            src={notion}
-            width={32}
-            height={32}
-          />
+          <Image alt="Notion logo" src={notion} width={24} height={24} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.twitter} rel="noreferrer">
-          <Image
-            alt="Twitter logo"
-            src={twitter}
-            width={32}
-            height={32}
-          />
+          <Image alt="Twitter logo" src={twitter} width={24} height={24} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.instagram} rel="noreferrer">
-          <Image
-            alt="Instagram logo"
-            src={instagram}
-            width={32}
-            height={32}
-          />
+          <Image alt="Instagram logo" src={instagram} width={24} height={24} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
-          <Image
-            alt="LinkedIn logo"
-            src={linkedIn}
-            width={32}
-            height={32}
-          />
+          <Image alt="LinkedIn logo" src={linkedIn} width={24} height={24} />
+        </a>
+        <a target="_blank" href={conferenceInfoUrl.youtube} rel="noreferrer">
+          <Image alt="Youtube logo" src={youtube} width={24} height={24} />
         </a>
       </div>
     </div>

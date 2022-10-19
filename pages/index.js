@@ -1,20 +1,18 @@
-
-import HeadMeta from './components/HeadMeta';
+import HeadMeta from "./components/HeadMeta";
 import Header from "./components/Header";
-import Description from "./components/Description";
-import Info from "./components/Info";
+import Onboarding from "./Onboarding/Onboarding";
 
-import style from "../styles/modules/BackgroundImage.module.css";
+import Main from "./Main/Main";
 
 const Home = () => {
   return (
     <>
       <HeadMeta />
 
-      <main className={style.backgroundImage}>
+      <main>
         <Header></Header>
-        <Description></Description>
-        <Info></Info>
+        <Onboarding></Onboarding>
+        <Main></Main>
       </main>
     </>
   );
