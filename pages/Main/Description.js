@@ -1,12 +1,15 @@
 import SubScription from "../components/SubScription";
 import styles from "../../styles/modules/Description.module.css";
+import SNS from "../components/SNS";
 
 const Description = () => {
+  const descriptionMessage = {};
+
   return (
     <section className={styles.description}>
       <h3>
-        SyncSwift 2022 <br />
-        Nesting, 둥지를 틀다.
+        {`SyncSwift 2022 
+Nesting, 둥지를 틀다.`}
       </h3>
       <SubScription
         title="AsyncSwift의 첫 컨퍼런스."
@@ -16,9 +19,9 @@ const Description = () => {
       ></SubScription>
       <SubScription
         title="이번 컨퍼런스의 테마는 'Nesting(둥지를 틀다)' 입니다."
-        text={`국내에서 애플 생태계를 구성하고 있는 다양한 사람들이 모여, 함께 둥지를 틀어보려 합니다.
-        반갑습니다, 환영합니다.`}
+        text={`국내에서 애플 생태계를 구성하고 있는 다양한 사람들이 모여, 함께 둥지를 틀어보려 합니다.`}
       ></SubScription>
+      <SNS></SNS>
     </section>
   );
 };

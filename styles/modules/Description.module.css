@@ -1,7 +1,10 @@
 .description {
-  margin: 0 auto;
-  width: 118rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 118rem;
   text-align: center;
+  white-space: pre-wrap;
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -9,6 +12,14 @@
   font-size: 4.8rem;
   font-weight: 700;
   color: #1920ff;
+}
+
+/* Icon */
+.description > div:nth-child(4) {
+  max-width: 118rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 .subScription {
@@ -26,29 +37,37 @@
 }
 
 /* 데스크탑 */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 836px) {
+  /* Icon */
+  .description > div:nth-child(4) {
+    visibility: hidden;
+  }
 }
 
 /* 모바일 */
 @media screen and (max-width: 768px) {
   .description {
-    margin-left: 2.4rem;
+    text-align: start;
   }
 
-  .description h1 {
-    width: 30rem;
-    font-size: 3.4rem;
-    margin-bottom: 1.6rem;
+  .description h3 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #1920ff;
   }
 
-  .description h2 {
+  .subScription {
+    font-weight: 500;
     font-size: 1.7rem;
+    line-height: 160%;
+  }
+
+  .subScription > h4 {
     font-weight: bold;
   }
 
-  .location {
-    line-height: 160%;
-    font-size: 1.7em;
+  .SNSDescriptionContainer {
+    visibility: visible;
   }
 }
 

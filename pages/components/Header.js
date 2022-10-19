@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import SNS from "./SNS";
-import Ticket from "./Ticket";
 
 import LogoFile from "../../public/logo-horizental.svg";
 
 import style from "../../styles/modules/Header.module.css";
+import InfoStyle from "../../styles/modules/Info.module.css";
 
 const Header = () => {
   return (
@@ -21,9 +21,8 @@ const Header = () => {
             />
           </a>
         </Link>
-        <SNS></SNS>
+        <SNS locationClassName={InfoStyle.getInfo}></SNS>
       </div>
-      {/* <Ticket></Ticket> */}
     </header>
   );
 };

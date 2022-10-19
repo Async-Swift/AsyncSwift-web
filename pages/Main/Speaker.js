@@ -11,7 +11,7 @@ const Speaker = () => {
     {
       speakerName: "박건호",
       speakerCompany: `Apple Developer Academy 
-      @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "김찬우",
@@ -51,47 +51,47 @@ const Speaker = () => {
     {
       speakerName: "백수영",
       speakerCompany: `Apple Developer Academy
-      @ POSTECH / IT manager`,
+@ POSTECH / IT manager`,
     },
     {
       speakerName: "이민아 외 4인",
       speakerCompany: `Apple Developer Academy
-    @ POSTECH / Mentor`,
+@ POSTECH / Mentor`,
     },
     {
       speakerName: "이현호",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentor`,
+@ POSTECH / Mentor`,
     },
     {
       speakerName: "박종호",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "신동준",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "이준영",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "이가은",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "김인섭",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "이명환",
       speakerCompany: `Apple Developer Academy 
-    @ POSTECH / Mentee`,
+@ POSTECH / Mentee`,
     },
   ];
 

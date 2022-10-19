@@ -57,6 +57,7 @@
     align-items: flex-start;
     gap: 1.6rem;
     font-size: 1.2rem;
+    visibility: hidden;
   }
 
   .SNSContainer {

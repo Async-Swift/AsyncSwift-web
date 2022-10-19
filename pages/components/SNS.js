@@ -8,7 +8,7 @@ import youtube from "../../public/youtube.svg";
 
 import style from "../../styles/modules/Info.module.css";
 
-const SNS = () => {
+const SNS = ({ locationClassName }) => {
   const conferenceInfoUrl = {
     notion:
       "https://unnnyong.notion.site/AsyncSwift-9baba57eb8f8416d877bd5d2aba4a62d",
@@ -19,8 +19,7 @@ const SNS = () => {
   };
 
   return (
-    <div className={style.getInfo}>
-      {/* <h4>To get latest information</h4> */}
+    <div className={locationClassName || ""}>
       <div className={style.SNSContainer}>
         <a target="_blank" href={conferenceInfoUrl.notion} rel="noreferrer">
           <Image alt="Notion logo" src={notion} width={24} height={24} />

@@ -13,8 +13,10 @@ const Main = () => {
       <Description></Description>
       <Conference></Conference>
       <Speaker></Speaker>
-      {/* <AppInfo></AppInfo> */}
-      {/* <Sponser></Sponser> */}
+      {/** TODO
+       * <AppInfo></AppInfo>
+       * <Sponser></Sponser>
+       */}
       <Footer></Footer>
     </main>
   );
