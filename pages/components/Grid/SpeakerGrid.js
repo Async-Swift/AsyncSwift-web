@@ -11,7 +11,7 @@ const SpeakerGrid = ({ sessionTitle, speakers }) => {
         {speakers.map((speaker, index) => {
           const speakerImagePath = `/speaker/${speaker.speakerName}.svg`;
           return (
-            <div className={styles.speakerProfileContainer}>
+            <div key={index} className={styles.speakerProfileContainer}>
               <div className={styles.speakerProfileImageBox}>
                 <Image
                   src={speakerImagePath}
