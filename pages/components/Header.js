@@ -1,24 +1,31 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import LogoFile from "../../public/AsyncLogo.svg";
-
+import SNS from "./SNS";
+import Ticket from "./Ticket";
+import LogoFile from "../../public/LogoHorizental.svg";
 import style from "../../styles/modules/Header.module.css";
+import InfoStyle from "../../styles/modules/Info.module.css";
 
 const Header = () => {
   return (
-    <header className={style.header}>
-      <Link href="/">
-        <a>
-          <Image
-            src={LogoFile}
-            alt="AsyncSwift Community Logo"
-            width={62}
-            height={60}
-          />
-        </a>
-      </Link>
-    </header>
+    <div>
+      <header className={style.header}>
+        <div>
+          <Link href="/">
+            <a>
+              <Image
+                src={LogoFile}
+                alt="AsyncSwift Community Logo"
+                width={183}
+                height={40}
+              />
+            </a>
+          </Link>
+          <SNS locationClassName={InfoStyle.getInfo}></SNS>
+        </div>
+      </header>
+      <Ticket></Ticket>
+    </div>
   );
 };
 
