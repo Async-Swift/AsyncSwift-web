@@ -82,7 +82,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  /* font-size: 100%; */
   font: inherit;
   vertical-align: baseline;
   font-family: Helvetica, Arial, sans-serif;
@@ -110,6 +110,8 @@ body {
   height: 100%;
   width: 100%;
   color: white;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 ol,
 ul {
