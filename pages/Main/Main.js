@@ -1,7 +1,7 @@
 import Description from "./Description";
 import Speaker from "./Speaker";
-import AppInfo from "./AppInfo";
-import Sponser from "./Sponser";
+// import AppInfo from "./AppInfo";
+// import Sponser from "./Sponser";
 import Footer from "../Footer/Footer";
 
 import styles from "../../styles/modules/Main.module.css";

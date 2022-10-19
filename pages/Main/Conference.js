@@ -1,5 +1,3 @@
-/*global kakao*/
-
 import styles from "../../styles/modules/Conference.module.css";
 import React, { useState, useEffect } from "react";
 

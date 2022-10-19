@@ -1,7 +1,5 @@
 import SubScription from "../components/SubScription";
 
-import Link from "next/link";
-
 const AppInfo = () => {
   return (
     <section>
