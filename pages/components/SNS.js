@@ -4,6 +4,7 @@ import notion from "../../public/notion.svg";
 import twitter from "../../public/twitter.svg";
 import instagram from "../../public/instagram.svg";
 import linkedIn from "../../public/linkedIn.svg";
+import youtube from "../../public/youtube.svg";
 
 import style from "../../styles/modules/Info.module.css";
 
@@ -14,6 +15,7 @@ const SNS = () => {
     instagram: "https://www.instagram.com/asyncswift/",
     twitter: "https://twitter.com/AsyncSwift",
     linkedIn: "https://www.linkedin.com/company/async-swift/",
+    youtube: "https://www.youtube.com/channel/UCig96hmPxDF4D3II6idDoaw",
   };
 
   return (
@@ -31,6 +33,9 @@ const SNS = () => {
         </a>
         <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
           <Image alt="LinkedIn logo" src={linkedIn} width={24} height={24} />
+        </a>
+        <a target="_blank" href={conferenceInfoUrl.youtube} rel="noreferrer">
+          <Image alt="Youtube logo" src={youtube} width={24} height={24} />
         </a>
       </div>
     </div>
