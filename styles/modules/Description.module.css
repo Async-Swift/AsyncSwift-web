@@ -47,7 +47,11 @@
 /* 모바일 */
 @media screen and (max-width: 768px) {
   .description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
     text-align: start;
+    white-space: pre-wrap;
   }
 
   .description h3 {
