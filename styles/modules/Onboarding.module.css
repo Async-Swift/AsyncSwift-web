@@ -4,24 +4,14 @@
 .onboarding {
   padding-left: 4rem;
   height: 120vh;
-  /* background-color: #1a1a1a; */
 }
 
 .onboarding div {
   display: flex;
 }
-.items {
-  align-items: center;
-}
+
 .info {
   align-items: center;
-}
-
-.container {
-  justify-content: space-between;
-  align-items: flex-end;
-  /* background-color: aqua; */
-  z-index: 3;
 }
 
 .onboarding h1 {
@@ -62,10 +52,6 @@
 
 /* 데스크탑, 가로 배열 */
 @media screen and (min-width: 1550px) {
-  .container {
-    align-items: center;
-  }
-
   .onboarding article {
     width: calc(100vw - 8rem);
     height: 100vh;
@@ -73,7 +59,6 @@
     background-image: url("../../public/birds/hBG.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
 
     z-index: 1;
   }
@@ -81,11 +66,6 @@
 
 /* 데스크탑, 세로 배열 */
 @media screen and (max-width: 1550px) and (min-width: 1274px) {
-  .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
   .onboarding article {
     width: calc(100vw - 8rem);
     height: 100vh;
@@ -93,18 +73,12 @@
     background-image: url("../../public/birds/hBG.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
 
     z-index: 1;
   }
 }
 
 @media screen and (max-width: 1274px) and (min-width: 836px) {
-  .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
   .onboarding article {
     width: calc(100vw - 8rem);
     height: 100vh;
@@ -134,12 +108,6 @@
     height: 120vh;
   }
 
-  .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    background-color: black;
-  }
   .onboarding div {
     display: flex;
     justify-content: space-between;
@@ -148,9 +116,6 @@
 
   .info {
     flex-direction: column;
-  }
-  .items {
-    align-items: center;
   }
 
   .onboarding h1 {
