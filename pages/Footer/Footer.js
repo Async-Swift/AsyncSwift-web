@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import LogoFile from "../../public/AsyncLogo.svg";
+import LogoFile from "../../public/AsyncLogo.png";
 
 import styles from "../../styles/modules/Footer.module.css";
 

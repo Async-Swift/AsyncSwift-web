@@ -11,7 +11,7 @@ const SpeakerGrid = ({ sessionTitle, speakers }) => {
       <div className={styles.speakerGrid}>
         {speakers &&
           speakers.map((speaker, index) => {
-            const speakerImagePath = `/speaker/${speaker.speakerName}.svg`;
+            const speakerImagePath = `/speaker/${speaker.speakerName}.png`;
             return (
               <div key={index} className={styles.speakerProfileContainer}>
                 <div className={styles.speakerProfileImageBox}>
@@ -26,8 +26,7 @@ const SpeakerGrid = ({ sessionTitle, speakers }) => {
                 <SpeakerProfile
                   key={index}
                   name={speaker.speakerName}
-                  company={speaker.speakerCompany}
-                ></SpeakerProfile>
+                  company={speaker.speakerCompany}></SpeakerProfile>
               </div>
             );
           })}
