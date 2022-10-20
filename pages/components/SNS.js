@@ -22,19 +22,19 @@ const SNS = ({ locationClassName }) => {
     <div className={locationClassName || ""}>
       <div className={style.SNSContainer}>
         <a target="_blank" href={conferenceInfoUrl.notion} rel="noreferrer">
-          <Image alt="Notion logo" src={notion} width={24} height={24} />
+          <Image alt="Notion logo" src={notion} width={28} height={28} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.twitter} rel="noreferrer">
-          <Image alt="Twitter logo" src={twitter} width={24} height={24} />
+          <Image alt="Twitter logo" src={twitter} width={28} height={28} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.instagram} rel="noreferrer">
-          <Image alt="Instagram logo" src={instagram} width={24} height={24} />
+          <Image alt="Instagram logo" src={instagram} width={28} height={28} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
-          <Image alt="LinkedIn logo" src={linkedIn} width={24} height={24} />
+          <Image alt="LinkedIn logo" src={linkedIn} width={28} height={28} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.youtube} rel="noreferrer">
-          <Image alt="Youtube logo" src={youtube} width={24} height={24} />
+          <Image alt="Youtube logo" src={youtube} width={28} height={28} />
         </a>
       </div>
     </div>

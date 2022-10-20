@@ -5,41 +5,41 @@ import SpeakerGrid from "../components/Grid/SpeakerGrid";
 const Speaker = () => {
   const morningAfterSpeakers = [
     {
+      speakerName: "류성두",
+      speakerCompany: "뱅크샐러드",
+    },
+    {
+      speakerName: "김윤재",
+      speakerCompany: "LINE Plus",
+    },
+    {
       speakerName: "강훈",
       speakerCompany: "당근마켓",
-    },
-    {
-      speakerName: "박건호",
-      speakerCompany: `Apple Developer Academy 
-@ POSTECH / Mentee`,
-    },
-    {
-      speakerName: "김찬우",
-      speakerCompany: "원티드랩",
-    },
-    {
-      speakerName: "허성진",
-      speakerCompany: "인포마이닝",
     },
     {
       speakerName: "김지홍",
       speakerCompany: "디자인스펙트럼",
     },
     {
-      speakerName: "주협",
-      speakerCompany: "코드잇",
-    },
-    {
-      speakerName: "류성두",
-      speakerCompany: "뱅크샐러드",
-    },
-    {
       speakerName: "문상봉",
       speakerCompany: "플리토",
     },
     {
-      speakerName: "김윤재",
-      speakerCompany: "LINE Plus",
+      speakerName: "허성진",
+      speakerCompany: "인포마이닝",
+    },
+    {
+      speakerName: "주협",
+      speakerCompany: "코드잇",
+    },
+    {
+      speakerName: "김찬우",
+      speakerCompany: "원티드랩",
+    },
+    {
+      speakerName: "박건호",
+      speakerCompany: `Apple Developer Academy 
+@ POSTECH / Mentee`,
     },
     {
       speakerName: "홍길동",
