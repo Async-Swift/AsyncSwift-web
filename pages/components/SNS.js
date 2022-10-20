@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import notion from "../../public/notion.svg";
-import twitter from "../../public/twitter.svg";
-import instagram from "../../public/instagram.svg";
-import linkedIn from "../../public/linkedIn.svg";
-import youtube from "../../public/youtube.svg";
+import notion from "../../public/notion.png";
+import twitter from "../../public/twitter.png";
+import instagram from "../../public/instagram.png";
+import linkedIn from "../../public/linkedin.png";
+import youtube from "../../public/youtube.png";
 
 import style from "../../styles/modules/Info.module.css";
 

@@ -101,12 +101,10 @@ const Speaker = () => {
       <div className={styles.speakerGridContainer}>
         <SpeakerGrid
           sessionTitle="Morning / Afternoon session"
-          speakers={morningAfterSpeakers}
-        ></SpeakerGrid>
+          speakers={morningAfterSpeakers}></SpeakerGrid>
         <SpeakerGrid
           sessionTitle="Talk session"
-          speakers={talkSpeakers}
-        ></SpeakerGrid>
+          speakers={talkSpeakers}></SpeakerGrid>
       </div>
     </section>
   );
