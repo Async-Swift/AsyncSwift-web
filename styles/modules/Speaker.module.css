@@ -62,6 +62,7 @@
 .speakerProfile .speakerCompany {
   color: #afafaf;
   font-size: 1.4rem;
+  line-height: 130%;
   margin-top: 0.8rem;
   white-space: pre-wrap;
 }
