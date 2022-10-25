@@ -52,6 +52,7 @@
     align-items: stretch;
     text-align: start;
     white-space: pre-wrap;
+    word-break: keep-all;
   }
 
   .description h3 {
