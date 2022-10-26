@@ -9,16 +9,16 @@ const Speaker = () => {
       speakerCompany: "뱅크샐러드",
     },
     {
+      speakerName: "김지홍",
+      speakerCompany: "디자인스펙트럼",
+    },
+    {
       speakerName: "김윤재",
       speakerCompany: "LINE Plus",
     },
     {
       speakerName: "강훈",
       speakerCompany: "당근마켓",
-    },
-    {
-      speakerName: "김지홍",
-      speakerCompany: "디자인스펙트럼",
     },
     {
       speakerName: "문상봉",
