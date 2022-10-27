@@ -18,15 +18,15 @@ const SpeakerGrid = ({ sessionTitle, speakers }) => {
                   <Image
                     src={speakerImagePath}
                     alt="AsyncSwift Community Logo"
-                    width={180}
-                    height={180}
+                    layout="fill"
                     priority
                   />
                 </div>
                 <SpeakerProfile
                   key={index}
                   name={speaker.speakerName}
-                  company={speaker.speakerCompany}></SpeakerProfile>
+                  company={speaker.speakerCompany}
+                ></SpeakerProfile>
               </div>
             );
           })}
