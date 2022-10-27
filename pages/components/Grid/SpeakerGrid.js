@@ -4,7 +4,6 @@ import styles from "../../../styles/modules/Speaker.module.css";
 import SpeakerProfile from "./SpeakerProfile";
 
 const SpeakerGrid = ({ sessionTitle, speakers }) => {
-  console.log(speakers);
   return (
     <div className={styles.speakerInfoContainer}>
       <h3>{sessionTitle}</h3>
