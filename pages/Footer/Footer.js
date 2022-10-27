@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import LogoFile from "../../public/AsyncLogo.svg";
+import LogoFile from "../../public/AsyncLogo.png";
 
 import styles from "../../styles/modules/Footer.module.css";
 
@@ -20,7 +20,9 @@ const Footer = () => {
       </Link>
       <div className={styles.footerCopyright}>
         <div>&copy; 2022.AsyncSwift all rights reserved.</div>
-        <div>contect us: asyncswift@gmail.com</div>
+        <div>
+          <a href="mailto:asyncswift@gmail.com">Contact us</a>
+        </div>
       </div>
     </footer>
   );

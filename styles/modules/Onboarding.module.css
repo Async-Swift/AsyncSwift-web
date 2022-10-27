@@ -3,7 +3,6 @@
 }
 .onboarding {
   padding-left: 4rem;
-  height: 120vh;
 }
 
 .onboarding div {
@@ -54,9 +53,9 @@
 @media screen and (min-width: 1550px) {
   .onboarding article {
     width: calc(100vw - 8rem);
-    height: 100vh;
+    height: calc((100vw - 8rem) * 0.8);
 
-    background-image: url("../../public/birds/hBG.svg");
+    background-image: url("../../public/birds/hBG.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -68,9 +67,9 @@
 @media screen and (max-width: 1550px) and (min-width: 1274px) {
   .onboarding article {
     width: calc(100vw - 8rem);
-    height: 100vh;
+    height: calc((100vw - 8rem) * 0.8);
 
-    background-image: url("../../public/birds/hBG.svg");
+    background-image: url("../../public/birds/hBG.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -81,9 +80,9 @@
 @media screen and (max-width: 1274px) and (min-width: 836px) {
   .onboarding article {
     width: calc(100vw - 8rem);
-    height: 100vh;
+    height: calc((100vw - 8rem) * 0.8);
 
-    background-image: url("../../public/birds/hBG.svg");
+    background-image: url("../../public/birds/hBG.png");
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -95,17 +94,16 @@
 @media screen and (max-width: 836px) {
   .onboarding article {
     width: calc(100vw - 2.4rem);
-    height: 100vh;
+    height: calc((100vw - 2.4rem) * 1.21);
 
-    background-image: url("../../public/birds/vBG.svg");
+    background-image: url("../../public/birds/vBG.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: 1;
   }
 
   .onboarding {
     padding-left: 1.6rem;
-    height: 120vh;
   }
 
   .onboarding div {

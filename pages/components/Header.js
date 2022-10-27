@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SNS from "./SNS";
 import Ticket from "./Ticket";
-import LogoFile from "../../public/LogoHorizental.svg";
+import LogoFile from "../../public/LogoHorizental.png";
 import style from "../../styles/modules/Header.module.css";
 import InfoStyle from "../../styles/modules/Info.module.css";
 

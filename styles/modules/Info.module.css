@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 15rem;
+  width: 18rem;
   height: 2.4rem;
 }
 
@@ -88,7 +88,7 @@
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10rem;
+    bottom: 2.4rem;
     font-weight: 700;
     font-size: 1.7rem;
     line-height: 160%;
