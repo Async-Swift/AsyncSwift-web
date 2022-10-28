@@ -54,7 +54,6 @@ const Sponser = () => {
           </div>
         </div>
       </div>
-      <h4>SyncSwift와 함께하기 ➔</h4>
     </section>
   );
 };
