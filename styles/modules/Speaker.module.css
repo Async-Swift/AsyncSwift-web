@@ -100,17 +100,28 @@
 @media screen and (max-width: 534px) {
   .speakerInfoContainer .speakerGrid .speakerProfileContainer {
     width: 12rem;
-    height: 28rem;
+    height: 24rem;
     margin: 0 auto;
   }
 
   .speakerGrid .speakerProfileContainer .speakerProfileImageBox {
-    width: 16rem;
-    height: 16rem;
+    width: 12rem;
+    height: 12rem;
   }
 
   .speakerGrid {
     gap: 5rem;
     grid-template-columns: 1fr 1fr;
+  }
+  .speakerProfile .speakerName {
+    font-size: 1.7rem;
+  }
+
+  .speakerProfile .speakerCompany {
+    color: #afafaf;
+    font-size: 1.1rem;
+    line-height: 130%;
+    margin-top: 0.8rem;
+    white-space: pre-wrap;
   }
 }
