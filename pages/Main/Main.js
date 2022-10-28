@@ -1,7 +1,7 @@
 import Description from "./Description";
 import Speaker from "./Speaker";
 // import AppInfo from "./AppInfo";
-// import Sponser from "./Sponser";
+import Sponsor from "./Sponsor";
 import Footer from "../Footer/Footer";
 
 import styles from "../../styles/modules/Main.module.css";
@@ -13,6 +13,7 @@ const Main = () => {
       <Description></Description>
       <Conference></Conference>
       <Speaker></Speaker>
+      <Sponsor></Sponsor>
       {/** TODO
        * <AppInfo></AppInfo>
        * <Sponser></Sponser>
