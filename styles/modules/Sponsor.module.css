@@ -1,0 +1,63 @@
+.sponsor {
+  margin-top: 30rem;
+}
+
+.sponsor h3 {
+  line-height: 160%;
+  font-weight: 800;
+  font-size: 4.8rem;
+}
+
+.sponsorGroup {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallSponsor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagePadding {
+  margin-right: 2rem;
+}
+
+.sponsor h4 {
+  margin-top: 4rem;
+  text-align: right;
+  line-height: 160%;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.gap {
+  width: 2rem;
+  height: 2rem;
+}
+/* 모바일 */
+@media screen and (max-width: 836px) {
+  .sponsor h3 {
+    line-height: 160%;
+    font-weight: 800;
+    font-size: 2.8rem;
+  }
+
+  .sponsor h4 {
+    margin-top: 4rem;
+    text-align: right;
+    line-height: 160%;
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+
+  .sponsorGroup {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sponsor {
+    padding-left: 1.6rem;
+  }
+}
