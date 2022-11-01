@@ -11,7 +11,7 @@ import sponsor3 from "../../public/sponsor/sponsor3.png";
 const Sponser = () => {
   return (
     <section className={styles.sponsor}>
-      <h3>Sponsor</h3>
+      <h3>Partner</h3>
       <div>
         <div className={styles.sponsorGroup}>
           <Image
