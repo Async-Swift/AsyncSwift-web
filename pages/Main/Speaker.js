@@ -54,7 +54,7 @@ const Speaker = () => {
 @ POSTECH / IT manager`,
     },
     {
-      speakerName: "이민아 외 4인",
+      speakerName: "이수진",
       speakerCompany: `Apple Developer Academy
 @ POSTECH / Mentor`,
     },
