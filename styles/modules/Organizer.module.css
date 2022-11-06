@@ -1,0 +1,128 @@
+.organizerContainer {
+  width: 100%;
+  margin-top: 30rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.organizerContainer h3 {
+  line-height: 160%;
+  font-weight: 800;
+  font-size: 4.8rem;
+}
+
+.organizerContainer span {
+  margin-top: 40px;
+  font-size: 2.4rem;
+  color: #afafaf;
+}
+
+.organizerContainer .organizerGridContainer > div:nth-child(2) {
+  margin-top: 20rem;
+}
+
+.organizerInfoContainer h3 {
+  font-size: 2.4rem;
+  color: #afafaf;
+}
+
+.organizerGrid {
+  color: white;
+  font-size: 1.6rem;
+  height: 50%;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  text-align: center;
+  margin-top: 4rem;
+  gap: 10rem;
+}
+
+.organizerProfileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.organizerGrid .organizerProfileContainer .organizerProfileImageBox {
+  position: relative;
+  border-radius: 10px;
+  width: 18rem;
+  height: 18rem;
+}
+
+.organizerProfile {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.organizerInfoContainer .organizerGrid .organizerProfileContainer {
+  width: 28rem;
+  height: 25.4rem;
+}
+
+.organizerProfile .organizerName {
+  font-size: 2rem;
+}
+
+.organizerProfile .organizerCompany {
+  color: #afafaf;
+  font-size: 1.4rem;
+  line-height: 130%;
+  margin-top: 0.8rem;
+  white-space: pre-wrap;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 3;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .organizerContainer h3 {
+    font-size: 2.8rem;
+  }
+
+  .organizerInfoContainer h3 {
+    font-size: 2rem;
+    color: #afafaf;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .organizerInfoContainer .organizerGrid .organizerProfileContainer {
+    width: 12rem;
+    height: 24rem;
+    margin: 0 auto;
+  }
+
+  .organizerGrid .organizerProfileContainer .organizerProfileImageBox {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .organizerGrid {
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .organizerProfile .organizerName {
+    font-size: 1.7rem;
+  }
+
+  .organizerProfile .organizerCompany {
+    color: #afafaf;
+    font-size: 1.1rem;
+    line-height: 130%;
+    margin-top: 0.8rem;
+    white-space: pre-wrap;
+    word-break: keep-all;
+  }
+}
