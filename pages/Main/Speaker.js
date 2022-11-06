@@ -252,7 +252,7 @@ const Speaker = () => {
         <div className={styles.mainSession}>
           {mainSessionSpeakers.map((speaker, index) => (
             <SpeakerCard
-              key={`${speaker.sessionTitle + index}`}
+              key={`${speaker.sessionTitle}_${index}`}
               type="Main"
               sessionTitle={speaker.sessionTitle}
               sessionDescription={speaker.sessionDescription}
@@ -263,9 +263,9 @@ const Speaker = () => {
           ))}
         </div>
         <div className={styles.talkSession}>
-          {talkSessionSpeakers.map((speaker) => (
+          {talkSessionSpeakers.map((speaker, index) => (
             <SpeakerCard
-              key={`${speaker.sessionTitle + index}`}
+              key={`${speaker.sessionTitle}_${index}`}
               type="Talk"
               sessionTitle={speaker.sessionTitle}
               sessionDescription={speaker.sessionDescription}
