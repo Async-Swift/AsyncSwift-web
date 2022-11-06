@@ -18,7 +18,7 @@ const Organizer = () => {
     },
     {
       organizerName: "이민아",
-      organizerDescription: "도라도라도라",
+      organizerDescription: "물음표 해결에 집요한 보통의 디자이너",
     },
     {
       organizerName: "이현호",

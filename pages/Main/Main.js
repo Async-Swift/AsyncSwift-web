@@ -7,19 +7,17 @@ import Footer from "../Footer/Footer";
 import styles from "../../styles/modules/Main.module.css";
 import Conference from "./Conference";
 import Organizer from "./Organizar";
+import TimeLine from "./TimeLine";
 
 const Main = () => {
   return (
     <main className={styles.main}>
       <Description></Description>
       <Conference></Conference>
+      <TimeLine></TimeLine>
       <Speaker></Speaker>
       <Sponsor></Sponsor>
       <Organizer></Organizer>
-      {/** TODO
-       * <AppInfo></AppInfo>
-       * <Sponser></Sponser>
-       */}
       <Footer></Footer>
     </main>
   );
