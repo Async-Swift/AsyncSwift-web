@@ -93,7 +93,7 @@
 
 .speakerSessionContainer .speakerInfo .speakerIntroduceContainer {
   max-width: 36.8rem;
-  padding-top: 0.8rem;
+  padding-top: 0.4rem;
 }
 
 .speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:first-child {
@@ -131,6 +131,10 @@
     flex-direction: column;
     align-items: center;
     gap: 10rem;
+  }
+
+  .speakerFlexContainer .speakerSessionContainer {
+    padding: 2.4rem 2rem;
   }
 }
 

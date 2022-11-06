@@ -18,7 +18,8 @@ const Speaker = () => {
     {
       speakerName: "김지홍",
       speakerCompany: "디자인스펙트럼",
-      speakerDescription: "디자이너들이 더 행복하게 디자인할 수 있는 세상을 목표로 합니다.",
+      speakerDescription:
+        "디자이너들이 더 행복하게 디자인할 수 있는 세상을 목표로 합니다.",
       sessionTitle: "디자이너들이 애플에 열광했던 순간들",
       sessionDescription: `WWDC와 주요 애플 이벤트들을 돌아보며 디자이너들이
 왜 애플 디자인에 열광하는지, 무엇에 반응하는지 함께 이야기 나눕니다.`,
@@ -49,7 +50,8 @@ const Speaker = () => {
     {
       speakerName: "문상봉",
       speakerCompany: "플리토",
-      speakerDescription: "인싸도 못되는 아제이지만, Swift 세계에서만큼은 인싸가 되고 싶은 사람입니다.",
+      speakerDescription:
+        "인싸도 못되는 아제이지만, Swift 세계에서만큼은 인싸가 되고 싶은 사람입니다.",
       sessionTitle: "MVI 패턴과 어울리는 SwiftUI 화면 이동 라이브러리 만들기",
       sessionDescription:
         "SwiftUI 와 찰떡궁합인 MVI 패턴, 그리고 사내수공업으로 만든 LinkNavigator 라이브러리를 소개합니다",
@@ -73,7 +75,8 @@ const Speaker = () => {
       speakerName: "주협",
       speakerCompany: "코드잇",
       speakerDescription: "코드잇에서 프로덕트 디자이너로 일하고 있습니다.",
-      sessionTitle: "HIG에 영향을 받은 프로덕트 디자이너의 좋은 습관과 나쁜 습관 (HIG 컴포넌트를 중심으로)",
+      sessionTitle:
+        "HIG에 영향을 받은 프로덕트 디자이너의 좋은 습관과 나쁜 습관 (HIG 컴포넌트를 중심으로)",
       sessionDescription: `HIG가 프로덕트와 디자이너에게 미치는 다양한 면에 대해
         이야기합니다.
 
@@ -86,7 +89,8 @@ const Speaker = () => {
     {
       speakerName: "김찬우",
       speakerCompany: "원티드랩",
-      speakerDescription: "개개인을 위한 교육(Education for Each)을 추구하며 살고 있습니다.",
+      speakerDescription:
+        "개개인을 위한 교육(Education for Each)을 추구하며 살고 있습니다.",
       sessionTitle: "개인앱 개발, 이렇게만 따라하면 실패할 수 있다!",
       sessionDescription: `기획하고, 개발하고, 그리고, 배포하고, 마케팅까지.
         다 엉성하지만 그게 개인앱 개발의 매력 아닐까요?`,
@@ -99,7 +103,8 @@ const Speaker = () => {
       speakerName: "박건호",
       speakerCompany: `Apple Developer Academy 
 @ POSTECH / Mentee`,
-      speakerDescription: "현재 휴학을 하고 애플 디벨로퍼 아카데미에서 활동을 하고 있는 박건호입니다.",
+      speakerDescription:
+        "현재 휴학을 하고 애플 디벨로퍼 아카데미에서 활동을 하고 있는 박건호입니다.",
       sessionTitle: "SwiftUI로 앱 서비스 출시까지",
       sessionDescription: `많은 현업에서는 UIKit을 기반으로 앱 서비스를 출시합니다.
 
@@ -135,7 +140,8 @@ const Speaker = () => {
       speakerName: "이수진",
       speakerCompany: `Apple Developer Academy
 @ POSTECH / Mentor`,
-      speakerDescription: "기획자/PM으로 일해왔습니다. PM을 포함한 IT 여러 직군들과 소통하고 함께 성장하고 싶습니다.",
+      speakerDescription:
+        "기획자/PM으로 일해왔습니다. PM을 포함한 IT 여러 직군들과 소통하고 함께 성장하고 싶습니다.",
       sessionTitle: "히그머니나! 알면 알 수록 놀라운 HIG의 세계",
       sessionDescription: `반년간 Apple의 HIG(Human Interface Guideline) 스터디를 하면서 발견한 재미있었던 점들에 대해 공유하고 싶습니다.`,
       sns: {
@@ -146,8 +152,10 @@ const Speaker = () => {
       speakerName: "이현호",
       speakerCompany: `Apple Developer Academy 
 @ POSTECH / Mentor`,
-      speakerDescription: "개발 보다는 협업을 좋아하고, 학습보다는 공유를 좋아하는 개발자 입니다.",
-      sessionTitle: "위젯 어디에서 시작해서 어디로 가야할까요? iOS16에서의 다양한 위젯 정복기 + 락업스크린 위젯",
+      speakerDescription:
+        "개발 보다는 협업을 좋아하고, 학습보다는 공유를 좋아하는 개발자 입니다.",
+      sessionTitle:
+        "위젯 어디에서 시작해서 어디로 가야할까요? iOS16에서의 다양한 위젯 정복기 + 락업스크린 위젯",
       sessionDescription: `iOS 개발을 하다가 위젯을 개발해야할 때 알아야 할 것들과
         실제 위젯을 만들면서 했던 삽질의 포인트들을 처음 위젯 개발하는 분들께 공유드립니다.`,
       sns: {
@@ -161,9 +169,11 @@ const Speaker = () => {
       speakerName: "박종호",
       speakerCompany: `Apple Developer Academy 
 @ POSTECH / Mentee`,
-      speakerDescription: "iOS 개발자를 꿈꾸고 있는 개발자 지망생입니다. swift 언어에 대해 깊게 이해하고 싶어요.",
+      speakerDescription:
+        "iOS 개발자를 꿈꾸고 있는 개발자 지망생입니다. swift 언어에 대해 깊게 이해하고 싶어요.",
       sessionTitle: "프로토콜과 some, any 에 대한 고찰",
-      sessionDescription: "다형성과 some, 그리고 이번에 새로 나온 any 타입에 대해서 예제와 함께 소개하는 세션입니다.",
+      sessionDescription:
+        "다형성과 some, 그리고 이번에 새로 나온 any 타입에 대해서 예제와 함께 소개하는 세션입니다.",
       sns: {
         github: "https://github.com/HoJongE",
       },
@@ -202,13 +212,9 @@ const Speaker = () => {
       speakerDescription:
         "흔들리지만, 꾸준히, 그리고 반드시 세상에 필요한 사람이 되기 위해 노력하는 ios 개발자, 이가은입니다.",
       sessionTitle: "WWDC Student challenge 우승과 앱 기획",
-      sessionDescription: `WWDC Swift Student Challenge는
-      매년 전 세계의 학생들을 대상으로 iOS 앱개발 공모전을 열어
-      약 350명의 학생을 선발합니다.
+      sessionDescription: `WWDC Swift Student Challenge는 매년 전 세계의 학생들을 대상으로 iOS 앱개발 공모전을 열어 약 350명의 학생을 선발합니다.
       이는 자신의 개발과 앱의 가능성을 애플에게 마음껏 펼칠 수 있는 기회이기도 하면서, 선정된 winner에게는 다양한 장학금이 주어집니다.
-      이번 세션에서는 WWDC Swift Student Challenge에 대한
-      정보에 대해 소개합니다.
-      더불어 winner가 되기 위해 어떤 부분을 준비했는지 소개합니다`,
+      이번 세션에서는 WWDC Swift Student Challenge에 대한 정보에 대해 소개합니다. 더불어 winner가 되기 위해 어떤 부분을 준비했는지 소개합니다`,
       sns: {
         linkedIn: "https://www.linkedin.com/in/gaeun-lee-ios-developer/",
         blog: "https://rriver2.tistory.com/m/",
@@ -257,8 +263,7 @@ const Speaker = () => {
               sessionDescription={speaker.sessionDescription}
               speakerName={speaker.speakerName}
               speakerCompany={speaker.speakerCompany}
-              speakerDescription={speaker.speakerDescription}
-            ></SpeakerCard>
+              speakerDescription={speaker.speakerDescription}></SpeakerCard>
           ))}
         </div>
         <div className={styles.talkSession}>
@@ -270,8 +275,7 @@ const Speaker = () => {
               sessionDescription={speaker.sessionDescription}
               speakerName={speaker.speakerName}
               speakerCompany={speaker.speakerCompany}
-              speakerDescription={speaker.speakerDescription}
-            ></SpeakerCard>
+              speakerDescription={speaker.speakerDescription}></SpeakerCard>
           ))}
         </div>
       </div>
