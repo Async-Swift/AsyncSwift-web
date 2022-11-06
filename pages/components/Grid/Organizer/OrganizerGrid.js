@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../../../styles/modules/Organizer.module.css";
+import styles from "../../../../styles/modules/Organizer.module.css";
 import OrganizerProfile from "./OrganizerProfile";
 
 const OrganizerGrid = ({ sessionTitle, organizers }) => {
