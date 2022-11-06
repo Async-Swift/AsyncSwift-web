@@ -62,7 +62,7 @@ const Organizer = () => {
     <section className={styles.organizerContainer}>
       <h3>Organizer</h3>
       <div className={styles.organizerGridContainer}>
-        <OrganizerGrid sessionTitle="Organizer" organizers={organizers}></OrganizerGrid>
+        <OrganizerGrid organizers={organizers}></OrganizerGrid>
       </div>
     </section>
   );

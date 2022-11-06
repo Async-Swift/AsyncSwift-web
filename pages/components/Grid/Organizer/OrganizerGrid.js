@@ -3,10 +3,9 @@ import Image from "next/image";
 import styles from "../../../../styles/modules/Organizer.module.css";
 import OrganizerProfile from "./OrganizerProfile";
 
-const OrganizerGrid = ({ sessionTitle, organizers }) => {
+const OrganizerGrid = ({ organizers }) => {
   return (
     <div className={styles.organizerInfoContainer}>
-      <h3>{sessionTitle}</h3>
       <div className={styles.organizerGrid}>
         {organizers &&
           organizers.map((organizer, index) => {

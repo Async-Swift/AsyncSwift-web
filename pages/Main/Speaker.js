@@ -29,7 +29,7 @@ const Speaker = () => {
     {
       speakerName: "김윤재",
       speakerCompany: "LINE Plus",
-      speakerDescription: "라인에 입사한지 2년차인 주니어 개발자입니다",
+      speakerDescription: "라인에 입사한지 2년차인 주니어 개발자입니다.",
       sessionTitle: "Swift concurrency 적응기",
       sessionDescription: `주니어 개발자로 입사해서 WWDC 2021에 소개된 Swift concurrency에 적응하면서 알게 된 내용들을 공유합니다.`,
       sns: {},
@@ -246,7 +246,7 @@ const Speaker = () => {
   return (
     //sessionTitle, sessionDescription, speakerName, speakerCompany, speakerDescription
     <section className={styles.speakerContainer}>
-      <h3>Contents</h3>
+      <h3>Sessions</h3>
       <div className={styles.speakerFlexContainer}>
         <div className={styles.mainSession}>
           {mainSessionSpeakers.map((speaker, index) => (

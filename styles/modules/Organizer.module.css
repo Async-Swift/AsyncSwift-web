@@ -1,5 +1,4 @@
 .organizerContainer {
-  max-width: 36rem;
   width: 100%;
   margin-top: 30rem;
   animation: fadeIn 2s ease-in-out;
@@ -41,7 +40,7 @@
 .organizerProfileContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -124,5 +123,6 @@
     line-height: 130%;
     margin-top: 0.8rem;
     white-space: pre-wrap;
+    word-break: keep-all;
   }
 }
