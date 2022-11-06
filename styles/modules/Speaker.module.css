@@ -21,12 +21,12 @@
 .speakerContainer .speakerFlexContainer .mainSession {
   display: flex;
   flex-direction: column;
-  width: 48.4rem;
+  /* max-width: 58rem; */
   height: auto;
 }
 
 .speakerContainer .speakerFlexContainer .talkSession {
-  width: 48.4rem;
+  /* max-width: 58rem; */
   height: auto;
 }
 
@@ -83,34 +83,47 @@
 }
 
 .speakerSessionContainer .speakerInfo .speakerProfileImg {
-  width: 10rem;
+  min-width: 10rem;
   height: 10rem;
 }
 
 .speakerSessionContainer .speakerInfo .speakerIntroduceContainer {
-  width: 36.8rem;
+  max-width: 36.8rem;
   word-break: break-all;
+  padding-top: 0.8rem;
 }
 
-.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:first-child {
+.speakerSessionContainer
+  .speakerInfo
+  .speakerIntroduceContainer
+  div:first-child {
   line-height: 1.7rem;
   font-size: 1.7rem;
 }
 
-.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(2) {
+.speakerSessionContainer
+  .speakerInfo
+  .speakerIntroduceContainer
+  div:nth-child(2) {
   font-size: 1.2rem;
   line-height: 2.4rem;
   height: 2.4rem;
 }
 
-.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(2) {
+.speakerSessionContainer
+  .speakerInfo
+  .speakerIntroduceContainer
+  div:nth-child(2) {
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.2rem;
   height: 2.4rem;
 }
 
-.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(3) {
+.speakerSessionContainer
+  .speakerInfo
+  .speakerIntroduceContainer
+  div:nth-child(3) {
   font-size: 1.2rem;
   line-height: 1.6rem;
   height: auto;
@@ -136,5 +149,9 @@
     flex-direction: column;
     align-items: center;
     gap: 10rem;
+  }
+
+  .speakerFlexContainer .speakerSessionContainer {
+    padding: 2.4rem 2rem;
   }
 }
