@@ -1,7 +1,5 @@
 import styles from "../../styles/modules/Speaker.module.css";
 
-import SpeakerGrid from "../components/Grid/SpeakerGrid";
-
 const Speaker = () => {
   const morningAfterSpeakers = [
     {
@@ -229,11 +227,8 @@ const Speaker = () => {
 
   return (
     <section className={styles.speakerContainer}>
-      <h3>Speaker</h3>
-      <div className={styles.speakerGridContainer}>
-        <SpeakerGrid sessionTitle="Morning / Afternoon session" speakers={morningAfterSpeakers}></SpeakerGrid>
-        <SpeakerGrid sessionTitle="Talk session" speakers={talkSpeakers}></SpeakerGrid>
-      </div>
+      <div>d</div>
+      <div>e</div>
     </section>
   );
 };
