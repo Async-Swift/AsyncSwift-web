@@ -188,10 +188,16 @@ const Speaker = () => {
       speakerName: "이가은",
       speakerCompany: `Apple Developer Academy 
 @ POSTECH / Mentee`,
-      speakerDescription: "",
-      sessionTitle: "",
-      sessionDescription: "",
-      sns: {},
+      speakerDescription:
+        "흔들리지만, 꾸준히, 그리고 반드시 세상에 필요한 사람이 되기 위해 노력하는 ios 개발자, 이가은입니다.",
+      sessionTitle: "WWDC Student challenge 우승과 앱 기획",
+      sessionDescription:
+        "WWDC Swift Student Challenge는 매년 전 세계의 학생들을 대상으로 iOS 앱개발 공모전을 열여 약 350명의 학생을 선발합니다. 이는 자신의 개발과 앱의 가능성을 애플에게 마음껏 펼칠 수 있는 기회이기도 하면서, 선정된 winner에게는 다양한 장학금이 주어지는데요, 이번 세션에서는 WWDC Swift Student Challenge에 대한 정보 그리고, winner가 되기 위해 어떻게 준비했는지에 대해 소개합니다",
+      sns: {
+        linkedIn: "https://www.linkedin.com/in/gaeun-lee-ios-developer/",
+        blog: "https://rriver2.tistory.com/m/",
+        github: "https://github.com/rriver2",
+      },
     },
     {
       speakerName: "김인섭",
