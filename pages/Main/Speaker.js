@@ -136,9 +136,8 @@ const Speaker = () => {
       speakerCompany: `Apple Developer Academy
 @ POSTECH / Mentor`,
       speakerDescription: "기획자/PM으로 일해왔습니다. PM을 포함한 IT 여러 직군들과 소통하고 함께 성장하고 싶습니다.",
-      sessionTitle: "HIG Study 진행에 대한 공유",
-      sessionDescription: `Modular Architecture 가 무엇인지?
-      실제 제품에 어떻게 적용할 수 있는지 소개합니다.`,
+      sessionTitle: "히그머니나! 알면 알 수록 놀라운 HIG의 세계",
+      sessionDescription: `반년간 Apple의 HIG(Human Interface Guideline) 스터디를 하면서 발견한 재미있었던 점들에 대해 공유하고 싶습니다.`,
       sns: {
         linkedIn: "www.linkedin.com/in/sunnybaek",
       },
