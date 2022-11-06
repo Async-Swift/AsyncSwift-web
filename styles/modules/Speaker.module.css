@@ -15,18 +15,30 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 8rem;
 }
 
 .speakerContainer .speakerFlexContainer .mainSession {
   display: flex;
   flex-direction: column;
+  /* <<<<<<< HEAD */
   /* max-width: 58rem; */
+  /* =======
+  align-items: center;
+  width: 48.4rem;
+>>>>>>> c30cd9e5e8daeb753ab5a3125f1942fd0a1f30c9 */
   height: auto;
 }
 
 .speakerContainer .speakerFlexContainer .talkSession {
+  /* <<<<<<< HEAD */
   /* max-width: 58rem; */
+  /* =======
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48.4rem;
+>>>>>>> c30cd9e5e8daeb753ab5a3125f1942fd0a1f30c9 */
   height: auto;
 }
 
@@ -153,5 +165,24 @@
 
   .speakerFlexContainer .speakerSessionContainer {
     padding: 2.4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .speakerContainer .speakerFlexContainer {
+    align-items: center;
+  }
+
+  .speakerFlexContainer .speakerSessionContainer {
+    width: 35rem;
+    padding: 2rem;
+  }
+
+  .speakerSessionContainer .sessionContainer h5 {
+    font-size: 2rem;
+  }
+
+  .speakerSessionContainer .sessionContainer div {
+    font-size: 1.5rem;
   }
 }

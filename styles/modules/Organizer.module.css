@@ -1,4 +1,5 @@
 .organizerContainer {
+  max-width: 36rem;
   width: 100%;
   margin-top: 30rem;
   animation: fadeIn 2s ease-in-out;
