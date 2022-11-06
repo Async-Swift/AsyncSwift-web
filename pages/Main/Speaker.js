@@ -250,8 +250,9 @@ const Speaker = () => {
       <h3>Contents</h3>
       <div className={styles.speakerFlexContainer}>
         <div className={styles.mainSession}>
-          {mainSessionSpeakers.map((speaker) => (
+          {mainSessionSpeakers.map((speaker, index) => (
             <SpeakerCard
+              key={`${speaker.sessionTitle + index}`}
               type="Main"
               sessionTitle={speaker.sessionTitle}
               sessionDescription={speaker.sessionDescription}
@@ -264,6 +265,7 @@ const Speaker = () => {
         <div className={styles.talkSession}>
           {talkSessionSpeakers.map((speaker) => (
             <SpeakerCard
+              key={`${speaker.sessionTitle + index}`}
               type="Talk"
               sessionTitle={speaker.sessionTitle}
               sessionDescription={speaker.sessionDescription}
