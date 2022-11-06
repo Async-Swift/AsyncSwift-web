@@ -15,17 +15,21 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 8rem;
 }
 
 .speakerContainer .speakerFlexContainer .mainSession {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 48.4rem;
   height: auto;
 }
 
 .speakerContainer .speakerFlexContainer .talkSession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 48.4rem;
   height: auto;
 }
@@ -136,5 +140,24 @@
     flex-direction: column;
     align-items: center;
     gap: 10rem;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .speakerContainer .speakerFlexContainer {
+    align-items: center;
+  }
+
+  .speakerFlexContainer .speakerSessionContainer {
+    width: 35rem;
+    padding: 2rem;
+  }
+
+  .speakerSessionContainer .sessionContainer h5 {
+    font-size: 2rem;
+  }
+
+  .speakerSessionContainer .sessionContainer div {
+    font-size: 1.5rem;
   }
 }
