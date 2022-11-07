@@ -10,7 +10,7 @@ const Organizer = () => {
     },
     {
       organizerName: "윤성관",
-      organizerDescription: "링고링고링",
+      organizerDescription: "링고의 해적선은 어디에나 있지. 코더스하이에도 아카데미에도",
     },
     {
       organizerName: "이수진",
@@ -18,7 +18,7 @@ const Organizer = () => {
     },
     {
       organizerName: "이민아",
-      organizerDescription: "도라도라도라",
+      organizerDescription: "물음표 해결에 집요한 보통의 디자이너",
     },
     {
       organizerName: "이현호",
