@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TimeLine = () => {
   const speakerImageUrl = `/timetable/TT.png`;
-  const speakerMobileImageUrl = `/timetable/TTmobile.png`;
+  const speakerMobileImageUrl = `/timetable/TTM.png`;
 
   return (
     <div className={styles.timeLineContainer}>

@@ -14,25 +14,13 @@ const Sponser = () => {
       <h3>Partner</h3>
       <div>
         <div className={styles.sponsorGroup}>
-          <Image
-            className="imagePadding"
-            alt="samt"
-            src={samt}
-            width={580}
-            height={290}
-          />
+          <Image className="imagePadding" alt="samt" src={samt} width={580} height={290} />
           <div className={styles.gap}></div>
           <Image alt="openup" src={openup} width={580} height={290} />
         </div>
         <div className={styles.sponsorGroup}>
           <div className={styles.smallSponsor}>
-            <Image
-              className="imagePadding"
-              alt="codershigh"
-              src={codershigh}
-              width={280}
-              height={140}
-            />
+            <Image className="imagePadding" alt="codershigh" src={codershigh} width={280} height={140} />
             <div className={styles.gap}></div>
 
             <Image alt="sponsor1" src={sponsor1} width={280} height={140} />
@@ -40,13 +28,7 @@ const Sponser = () => {
           <div className={styles.gap}></div>
 
           <div className={styles.smallSponsor}>
-            <Image
-              className="imagePadding"
-              alt="sponsor2"
-              src={sponsor2}
-              width={280}
-              height={140}
-            />
+            <Image className="imagePadding" alt="sponsor2" src={sponsor2} width={280} height={140} />
 
             <div className={styles.gap}></div>
 
