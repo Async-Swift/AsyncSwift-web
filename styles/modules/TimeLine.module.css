@@ -34,10 +34,15 @@
   visibility: hidden;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
+  .timeLineContainer h3 {
+    font-size: 2.8rem;
+  }
+
   .imageBox {
     aspect-ratio: 0.2404298187;
   }
+
   .imageBox .timeLineImage {
     display: none;
     visibility: hidden;
