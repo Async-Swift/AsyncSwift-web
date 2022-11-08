@@ -1,5 +1,6 @@
 .speakerContainer {
   width: 100%;
+  height: auto;
   margin-top: 30rem;
   animation: fadeIn 2s ease-in-out;
 }
@@ -10,68 +11,105 @@
   font-size: 4.8rem;
 }
 
-.speakerContainer span {
-  margin-top: 40px;
-  font-size: 2.4rem;
-  color: #afafaf;
+.speakerContainer .speakerFlexContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.speakerContainer .speakerGridContainer > div:nth-child(2) {
-  margin-top: 20rem;
-}
-
-.speakerInfoContainer h3 {
-  font-size: 2.4rem;
-  color: #afafaf;
-}
-
-.speakerGrid {
-  color: white;
-  font-size: 1.6rem;
-  height: 50%;
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  text-align: center;
-  margin-top: 4rem;
-  gap: 10rem;
-}
-
-.speakerProfileContainer {
+.speakerContainer .speakerFlexContainer .mainSession {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: auto;
 }
 
-.speakerGrid .speakerProfileContainer .speakerProfileImageBox {
-  position: relative;
-  border-radius: 10px;
-  width: 18rem;
-  height: 18rem;
+.speakerContainer .speakerFlexContainer .talkSession {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
-.speakerProfile {
-  color: white;
-  font-size: 1.6rem;
+.speakerFlexContainer .speakerSessionContainer {
+  height: auto;
   margin-top: 2rem;
+  background-color: #191919;
+  padding: 2.4rem 3rem;
+  border-radius: 8px;
+  word-break: keep-all;
 }
 
-.speakerInfoContainer .speakerGrid .speakerProfileContainer {
-  width: 28rem;
-  height: 25.4rem;
+.speakerSessionContainer .mainIntroTitle {
+  width: 100%;
+  height: 2.4rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #fe00b8;
+  border-bottom: 0.1rem solid #fe00b8;
 }
 
-.speakerProfile .speakerName {
-  font-size: 2rem;
+.speakerSessionContainer .talkIntroTitle {
+  width: 100%;
+  height: 2.4rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #1920ff;
+  border-bottom: 0.1rem solid #1920ff;
 }
 
-.speakerProfile .speakerCompany {
-  color: #afafaf;
-  font-size: 1.4rem;
-  line-height: 130%;
+.speakerSessionContainer .sessionContainer {
+  font-weight: bold;
+  line-height: 2.4rem;
+}
+
+.speakerSessionContainer .sessionContainer h5 {
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-top: 2.4rem;
+}
+
+.speakerSessionContainer .sessionContainer div {
+  font-weight: 400;
+  font-size: 1.7rem;
   margin-top: 0.8rem;
-  white-space: pre-wrap;
+}
+
+.speakerSessionContainer .speakerInfo {
+  margin-top: 7.2rem;
+  display: flex;
+  gap: 1.6rem;
+  color: #cfcfcf;
+  font-weight: bold;
+}
+
+.speakerSessionContainer .speakerInfo .speakerProfileImg {
+  min-width: 10rem;
+  min-height: 10rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+.speakerSessionContainer .speakerInfo .speakerIntroduceContainer {
+  max-width: 36.8rem;
+  padding-top: 0.4rem;
+}
+
+.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:first-child {
+  line-height: 2.4rem;
+  font-size: 1.7rem;
+}
+
+.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(2) {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+.speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(3) {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 160%;
 }
 
 @keyframes fadeIn {
@@ -86,42 +124,48 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .speakerContainer h3 {
-    font-size: 2.8rem;
+@media screen and (max-width: 980px) {
+  .speakerContainer .speakerFlexContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
   }
 
-  .speakerInfoContainer h3 {
-    font-size: 2rem;
-    color: #afafaf;
+  .speakerFlexContainer .speakerSessionContainer {
+    padding: 2.4rem 2rem;
   }
 }
 
 @media screen and (max-width: 534px) {
-  .speakerInfoContainer .speakerGrid .speakerProfileContainer {
-    width: 12rem;
-    height: 24rem;
-    margin: 0 auto;
+  .speakerContainer h3 {
+    line-height: 160%;
+    font-weight: 800;
+    font-size: 2.8rem;
   }
 
-  .speakerGrid .speakerProfileContainer .speakerProfileImageBox {
-    width: 12rem;
-    height: 12rem;
+  .speakerContainer .speakerFlexContainer {
+    align-items: center;
   }
 
-  .speakerGrid {
-    gap: 5rem;
-    grid-template-columns: 1fr 1fr;
+  .speakerFlexContainer .speakerSessionContainer {
+    padding: 2rem;
   }
-  .speakerProfile .speakerName {
+
+  .speakerSessionContainer .sessionContainer h5 {
     font-size: 1.7rem;
   }
 
-  .speakerProfile .speakerCompany {
-    color: #afafaf;
-    font-size: 1.1rem;
-    line-height: 130%;
-    margin-top: 0.8rem;
-    white-space: pre-wrap;
+  .speakerSessionContainer .sessionContainer div {
+    font-size: 1.5rem;
+  }
+
+  .speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(2) {
+    line-height: 160%;
+  }
+
+  .speakerSessionContainer .speakerInfo .speakerIntroduceContainer div:nth-child(3) {
+    line-height: 160%;
   }
 }
