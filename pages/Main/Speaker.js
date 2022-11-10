@@ -59,18 +59,7 @@ const Speaker = () => {
         github: "https://github.com/interactord",
       },
     },
-    {
-      speakerName: "허성진",
-      speakerCompany: "인포마이닝",
-      speakerDescription: "ENTJ | 하고 싶은 걸 다 하고 싶어 바쁜 요즘",
-      sessionTitle: "나만 몰랐던, Xcode Breakpoint를 야무지게 쓰는 법",
-      sessionDescription:
-        "얼마 전까지도 클릭으로만 디버깅하던 한 주니어 개발자가 Xcode Breakpoint의 다양한 기능을 통해 효율적으로 디버깅하기 시작하게 된 과정을 소개합니다.",
-      sns: {
-        github: "https://github.com/heoseongjin",
-        instagram: "https://www.instagram.com/heo.010203",
-      },
-    },
+
     {
       speakerName: "주협",
       speakerCompany: "코드잇",
@@ -119,8 +108,21 @@ const Speaker = () => {
       },
     },
     {
+      speakerName: "이명환",
+      speakerCompany: `Apple Developer Academy 
+@ POSTECH / Mentee`,
+      speakerDescription: "개발과 수영을 좋아합니다.",
+      sessionTitle: "Tuist... 한번 써봤는데요?",
+      sessionDescription:
+        "Tuist가 무엇인지, Tuist를 프로젝트에서 어떻게 활용했는지, 경험을 기반으로 소개해드리고 싶습니다.",
+      sns: {
+        github: "https://github.com/Gobans",
+        linkedIn: "https://www.linkedin.com/in/명환-이-678b20240/",
+      },
+    },
+    {
       speakerName: "홍길동",
-      sessionTitle: "기대해주세요 !",
+      sessionTitle: "Lunch Special Session",
     },
   ];
 
@@ -142,7 +144,7 @@ const Speaker = () => {
 @ POSTECH / Mentor`,
       speakerDescription:
         "기획자/PM으로 일해왔습니다. PM을 포함한 IT 여러 직군들과 소통하고 함께 성장하고 싶습니다.",
-      sessionTitle: "히그머니나! 알면 알 수록 놀라운 HIG의 세계",
+      sessionTitle: "히그머니나! 알면 알수록 놀라운 HIG의 세계",
       sessionDescription: `반년간 Apple의 HIG(Human Interface Guideline) 스터디를 하면서 발견한 재미있었던 점들에 대해 공유하고 싶습니다.`,
       sns: {
         linkedIn: "www.linkedin.com/in/sunnybaek",
@@ -179,13 +181,25 @@ const Speaker = () => {
       },
     },
     {
+      speakerName: "허성진",
+      speakerCompany: "인포마이닝",
+      speakerDescription: "ENTJ | 하고 싶은 걸 다 하고 싶어 바쁜 요즘",
+      sessionTitle: "나만 몰랐던, Xcode Breakpoint를 야무지게 쓰는 법",
+      sessionDescription:
+        "얼마 전까지도 클릭으로만 디버깅하던 한 주니어 개발자가 Xcode Breakpoint의 다양한 기능을 통해 효율적으로 디버깅하기 시작하게 된 과정을 소개합니다.",
+      sns: {
+        github: "https://github.com/heoseongjin",
+        instagram: "https://www.instagram.com/heo.010203",
+      },
+    },
+    {
       speakerName: "신동준",
       speakerCompany: `Apple Developer Academy 
 @ POSTECH / Mentee`,
       speakerDescription:
         "AppleAcademy 참여하고있는 예비개발자 입니다 닉네임은 데이비드이고 Swift 및 Flutter배우고있습니다",
       sessionTitle: "VIsion을 사용한 여러가지 기능들",
-      sessionDescription: `VisionKit을 사용해서 새로운시도를 통해서 만든 기능들을
+      sessionDescription: `VisionKit을 사용해서 새로운 시도를 통해서 만든 기능들을
       소개하는 세션입니다.`,
       sns: {},
     },
@@ -210,7 +224,7 @@ const Speaker = () => {
       speakerCompany: `Apple Developer Academy 
 @ POSTECH / Mentee`,
       speakerDescription:
-        "흔들리지만, 꾸준히, 그리고 반드시 세상에 필요한 사람이 되기 위해 노력하는 ios 개발자, 이가은입니다.",
+        "흔들리지만, 꾸준히, 그리고 반드시 세상에 필요한 사람이 되기 위해 노력하는 iOS 개발자, 이가은입니다.",
       sessionTitle: "WWDC Student challenge 우승과 앱 기획",
       sessionDescription: `WWDC Swift Student Challenge는 매년 전 세계의 학생들을 대상으로 iOS 앱개발 공모전을 열어 약 350명의 학생을 선발합니다.
       이는 자신의 개발과 앱의 가능성을 애플에게 마음껏 펼칠 수 있는 기회이기도 하면서, 선정된 winner에게는 다양한 장학금이 주어집니다.
@@ -232,19 +246,6 @@ const Speaker = () => {
       더 나아가 다음에는 CloudKit 에 대해 알아보도록 하겠습니다!`,
       sns: {
         linkedIn: "https://www.linkedin.com/in/insub-kim-64ba8022b/",
-      },
-    },
-    {
-      speakerName: "이명환",
-      speakerCompany: `Apple Developer Academy 
-@ POSTECH / Mentee`,
-      speakerDescription: "개발과 수영을 좋아합니다.",
-      sessionTitle: "Tuist... 한번 써봤는데요?",
-      sessionDescription:
-        "Tuist가 무엇인지, Tuist를 프로젝트에서 어떻게 활용했는지, 경험을 기반으로 소개해드리고 싶습니다.",
-      sns: {
-        github: "https://github.com/Gobans",
-        linkedIn: "https://www.linkedin.com/in/명환-이-678b20240/",
       },
     },
   ];
