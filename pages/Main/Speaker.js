@@ -157,9 +157,9 @@ const Speaker = () => {
       speakerDescription:
         "개발 보다는 협업을 좋아하고, 학습보다는 공유를 좋아하는 개발자 입니다.",
       sessionTitle:
-        "위젯 어디에서 시작해서 어디로 가야할까요? iOS16에서의 다양한 위젯 정복기 + 락업스크린 위젯",
+        "Widget 세상으로 가는 입구가 여깁니다",
       sessionDescription: `iOS 개발을 하다가 위젯을 개발해야할 때 알아야 할 것들과
-        실제 위젯을 만들면서 했던 삽질의 포인트들을 처음 위젯 개발하는 분들께 공유드립니다.`,
+        실제 아주 간단한 위젯을 같이 만들면서 이해를 도와봅니다.`,
       sns: {
         twitter: "https://twitter.com/leeoios",
         instagram: "https://www.instagram.com/im____leeo/",
