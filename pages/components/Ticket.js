@@ -5,9 +5,9 @@ const Ticket = () => {
     <a
       className={style.ticketInfo}
       target="_blank"
-      href="https://festa.io/events/ndCognG2SC4ZEj44osqurB"
+      href="https://www.youtube.com/playlist?list=PLu5z3LShQlQXuZKlehlTfGZFc753dkgOs"
       rel="noreferrer">
-      <h3>참가신청 &#10132; </h3>
+      <h3>다시보기 &#10132; </h3>
     </a>
   );
 };
