@@ -13,7 +13,12 @@ const OrganizerGrid = ({ organizers }) => {
             return (
               <div key={index} className={styles.organizerProfileContainer}>
                 <div className={styles.organizerProfileImageBox}>
-                  <Image src={organizerImageUrl} alt="AsyncSwift Community Logo" layout="fill" priority />
+                  <Image
+                    src={organizerImageUrl}
+                    alt="AsyncSwift Community Logo"
+                    priority
+                    fill
+                    sizes="100vw" />
                 </div>
                 <OrganizerProfile
                   key={index}

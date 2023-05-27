@@ -22,19 +22,59 @@ const SNS = ({ locationClassName }) => {
     <div className={locationClassName || ""}>
       <div className={style.SNSContainer}>
         <a target="_blank" href={conferenceInfoUrl.notion} rel="noreferrer">
-          <Image alt="Notion logo" src={notion} width={28} height={28} />
+          <Image
+            alt="Notion logo"
+            src={notion}
+            width={28}
+            height={28}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.twitter} rel="noreferrer">
-          <Image alt="Twitter logo" src={twitter} width={28} height={28} />
+          <Image
+            alt="Twitter logo"
+            src={twitter}
+            width={28}
+            height={28}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.instagram} rel="noreferrer">
-          <Image alt="Instagram logo" src={instagram} width={28} height={28} />
+          <Image
+            alt="Instagram logo"
+            src={instagram}
+            width={28}
+            height={28}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
-          <Image alt="LinkedIn logo" src={linkedIn} width={28} height={28} />
+          <Image
+            alt="LinkedIn logo"
+            src={linkedIn}
+            width={28}
+            height={28}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
         <a target="_blank" href={conferenceInfoUrl.youtube} rel="noreferrer">
-          <Image alt="Youtube logo" src={youtube} width={28} height={28} />
+          <Image
+            alt="Youtube logo"
+            src={youtube}
+            width={28}
+            height={28}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </a>
       </div>
     </div>

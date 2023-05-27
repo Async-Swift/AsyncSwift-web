@@ -11,18 +11,18 @@ const TimeLine = () => {
       <h3>Time Table</h3>
       <div className={styles.imageBox}>
         <Image
-          layout="fill"
           className={styles.timeLineImage}
           alt="Sync Swift conference 타임라인 입니다."
           src={speakerImageUrl}
-        />
+          fill
+          sizes="100vw" />
 
         <Image
-          layout="fill"
           className={styles.timeLineImageMobile}
           alt="Sync Swift conference 타임라인 입니다."
           src={speakerMobileImageUrl}
-        />
+          fill
+          sizes="100vw" />
       </div>
     </div>
   );

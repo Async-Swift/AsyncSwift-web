@@ -14,7 +14,10 @@ const Footer = () => {
           alt="AsyncSwift Community Logo"
           width={62}
           height={60}
-        />
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </Link>
       <div className={styles.footerCopyright}>
         <div>&copy; 2022.AsyncSwift all rights reserved.</div>

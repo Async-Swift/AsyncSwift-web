@@ -17,7 +17,10 @@ const Header = () => {
               alt="AsyncSwift Community Logo"
               width={183}
               height={40}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </Link>
 
           <SNS locationClassName={InfoStyle.getInfo}></SNS>
