@@ -16,7 +16,15 @@ const SpeakerCard = ({ type, sessionTitle, sessionDescription, speakerName, spea
       </div>
       <div className={styles.speakerInfo}>
         <div className={styles.speakerProfileImg}>
-          <Image width={100} height={100} src={speakerImageUrl} alt={`${speakerName}연사자님 사진`} />
+          <Image
+            width={100}
+            height={100}
+            src={speakerImageUrl}
+            alt={`${speakerName}연사자님 사진`}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className={styles.speakerIntroduceContainer}>
           <div>{speakerName === "이준영" ? "최원혁 / 이준영" : speakerName}</div>

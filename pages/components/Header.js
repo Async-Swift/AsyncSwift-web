@@ -12,15 +12,17 @@ const Header = () => {
       <header className={style.header}>
         <div>
           <Link href="/">
-            <a>
-              <Image
-                src={LogoFile}
-                alt="AsyncSwift Community Logo"
-                width={183}
-                height={40}
-              />
-            </a>
+            <Image
+              src={LogoFile}
+              alt="AsyncSwift Community Logo"
+              width={183}
+              height={40}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </Link>
+
           <SNS locationClassName={InfoStyle.getInfo}></SNS>
         </div>
       </header>
