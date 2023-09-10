@@ -1,21 +1,22 @@
 {
-  "name": "sync-swift-2022",
-  "version": "0.1.0",
+  "name": "async-swift-web",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.4.4",
+    "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "^0.32.1"
   },
   "devDependencies": {
     "eslint": "8.41.0",
-    "eslint-config-next": "13.4.4"
+    "eslint-config-next": "13.4.19"
   }
 }
