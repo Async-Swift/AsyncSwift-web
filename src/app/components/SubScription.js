@@ -1,4 +1,4 @@
-import style from "../../styles/modules/Description.module.css";
+import style from "/styles/modules/Description.module.css";
 
 const SubScription = ({ title, text }) => {
   return (

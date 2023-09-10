@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import styles from "../../../../styles/modules/Organizer.module.css";
+import styles from "/styles/modules/Organizer.module.css";
 import OrganizerProfile from "./OrganizerProfile";
 
 const OrganizerGrid = ({ organizers }) => {
@@ -17,8 +17,9 @@ const OrganizerGrid = ({ organizers }) => {
                     src={organizerImageUrl}
                     alt="AsyncSwift Community Logo"
                     priority
+                    sizes="12rem"
                     fill
-                    sizes="100vw" />
+                  />
                 </div>
                 <OrganizerProfile
                   key={index}

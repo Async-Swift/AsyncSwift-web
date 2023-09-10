@@ -4,9 +4,9 @@ import Speaker from "./Speaker";
 import Sponsor from "./Sponsor";
 import Footer from "../Footer/Footer";
 
-import styles from "../../styles/modules/Main.module.css";
+import styles from "/styles/modules/Main.module.css";
 import Conference from "./Conference";
-import Organizer from "./Organizar";
+import Organizer from "./Organizer";
 import TimeLine from "./TimeLine";
 
 const Main = () => {

@@ -1,4 +1,4 @@
-import styles from "../../../../styles/modules/Organizer.module.css";
+import styles from "/styles/modules/Organizer.module.css";
 
 const OrganizerProfile = ({ name, description }) => {
   return (

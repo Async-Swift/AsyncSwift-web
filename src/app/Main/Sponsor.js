@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "../../styles/modules/Sponsor.module.css";
+import styles from "/styles/modules/Sponsor.module.css";
 
-import codershigh from "../../public/sponsor/codershigh.png";
-import samt from "../../public/sponsor/samt.png";
-import openup from "../../public/sponsor/openup.png";
-import sponsor1 from "../../public/sponsor/sponsor1.png";
-import sponsor2 from "../../public/sponsor/sponsor2.png";
-import sponsor3 from "../../public/sponsor/sponsor3.png";
+import codershigh from "/public/sponsor/codershigh.png";
+import samt from "/public/sponsor/samt.png";
+import openup from "/public/sponsor/openup.png";
+import sponsor1 from "/public/sponsor/sponsor1.png";
+import sponsor2 from "/public/sponsor/sponsor2.png";
+import sponsor3 from "/public/sponsor/sponsor3.png";
 
 const Sponser = () => {
   return (
@@ -23,8 +23,9 @@ const Sponser = () => {
               height={290}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </a>
           <div className={styles.gap}></div>
           <a href=" https://www.oss.kr">
@@ -35,8 +36,9 @@ const Sponser = () => {
               height={290}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </a>
         </div>
         <div className={styles.sponsorGroup}>
@@ -50,8 +52,9 @@ const Sponser = () => {
                 height={140}
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  height: "auto",
+                }}
+              />
             </a>
             <div className={styles.gap}></div>
 
@@ -62,8 +65,9 @@ const Sponser = () => {
               height={140}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
           <div className={styles.gap}></div>
 
@@ -76,8 +80,9 @@ const Sponser = () => {
               height={140}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
 
             <div className={styles.gap}></div>
 
@@ -88,8 +93,9 @@ const Sponser = () => {
               height={140}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </div>
         </div>
       </div>

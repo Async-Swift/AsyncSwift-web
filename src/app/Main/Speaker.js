@@ -1,4 +1,4 @@
-import styles from "../../styles/modules/Speaker.module.css";
+import styles from "/styles/modules/Speaker.module.css";
 import SpeakerCard from "../components/Grid/Speaker/SpeakerCard";
 
 const Speaker = () => {
@@ -156,8 +156,7 @@ const Speaker = () => {
 @ POSTECH / Mentor`,
       speakerDescription:
         "개발 보다는 협업을 좋아하고, 학습보다는 공유를 좋아하는 개발자 입니다.",
-      sessionTitle:
-        "Widget 세상으로 가는 입구가 여깁니다",
+      sessionTitle: "Widget 세상으로 가는 입구가 여깁니다",
       sessionDescription: `iOS 개발을 하다가 위젯을 개발해야할 때 알아야 할 것들과
         실제 아주 간단한 위젯을 같이 만들면서 이해를 도와봅니다.`,
       sns: {
@@ -264,7 +263,8 @@ const Speaker = () => {
               sessionDescription={speaker.sessionDescription}
               speakerName={speaker.speakerName}
               speakerCompany={speaker.speakerCompany}
-              speakerDescription={speaker.speakerDescription}></SpeakerCard>
+              speakerDescription={speaker.speakerDescription}
+            ></SpeakerCard>
           ))}
         </div>
         <div className={styles.talkSession}>
@@ -276,7 +276,8 @@ const Speaker = () => {
               sessionDescription={speaker.sessionDescription}
               speakerName={speaker.speakerName}
               speakerCompany={speaker.speakerCompany}
-              speakerDescription={speaker.speakerDescription}></SpeakerCard>
+              speakerDescription={speaker.speakerDescription}
+            ></SpeakerCard>
           ))}
         </div>
       </div>

@@ -1,4 +1,4 @@
-import styles from "../../styles/modules/Conference.module.css";
+import styles from "/styles/modules/Conference.module.css";
 
 const Conference = () => {
   return (

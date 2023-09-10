@@ -1,9 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import LogoFile from "../../public/AsyncLogo.png";
-
-import styles from "../../styles/modules/Footer.module.css";
+import LogoFile from "/public/AsyncLogo.png";
+import styles from "/styles/modules/Footer.module.css";
 
 const Footer = () => {
   return (
@@ -16,8 +15,9 @@ const Footer = () => {
           height={60}
           style={{
             maxWidth: "100%",
-            height: "auto"
-          }} />
+            height: "auto",
+          }}
+        />
       </Link>
       <div className={styles.footerCopyright}>
         <div>&copy; 2022.AsyncSwift all rights reserved.</div>

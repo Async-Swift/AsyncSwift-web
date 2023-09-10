@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import notion from "../../public/notion.png";
-import twitter from "../../public/twitter.png";
-import instagram from "../../public/instagram.png";
-import linkedIn from "../../public/linkedin.png";
-import youtube from "../../public/youtube.png";
+import notion from "/public/notion.png";
+import twitter from "/public/twitter.png";
+import instagram from "/public/instagram.png";
+import linkedIn from "/public/linkedin.png";
+import youtube from "/public/youtube.png";
 
-import style from "../../styles/modules/Info.module.css";
+import style from "/styles/modules/Info.module.css";
 
 const SNS = ({ locationClassName }) => {
   const conferenceInfoUrl = {
@@ -29,8 +29,9 @@ const SNS = ({ locationClassName }) => {
             height={28}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
         <a target="_blank" href={conferenceInfoUrl.twitter} rel="noreferrer">
           <Image
@@ -40,8 +41,9 @@ const SNS = ({ locationClassName }) => {
             height={28}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
         <a target="_blank" href={conferenceInfoUrl.instagram} rel="noreferrer">
           <Image
@@ -51,8 +53,9 @@ const SNS = ({ locationClassName }) => {
             height={28}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
         <a target="_blank" href={conferenceInfoUrl.linkedIn} rel="noreferrer">
           <Image
@@ -62,8 +65,9 @@ const SNS = ({ locationClassName }) => {
             height={28}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
         <a target="_blank" href={conferenceInfoUrl.youtube} rel="noreferrer">
           <Image
@@ -73,8 +77,9 @@ const SNS = ({ locationClassName }) => {
             height={28}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </a>
       </div>
     </div>

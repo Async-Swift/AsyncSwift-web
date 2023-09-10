@@ -1,4 +1,4 @@
-import styles from "../../styles/modules/TimeLine.module.css";
+import styles from "/styles/modules/TimeLine.module.css";
 
 import Image from "next/image";
 
@@ -15,14 +15,14 @@ const TimeLine = () => {
           alt="Sync Swift conference 타임라인 입니다."
           src={speakerImageUrl}
           fill
-          sizes="100vw" />
+        />
 
         <Image
           className={styles.timeLineImageMobile}
           alt="Sync Swift conference 타임라인 입니다."
           src={speakerMobileImageUrl}
           fill
-          sizes="100vw" />
+        />
       </div>
     </div>
   );

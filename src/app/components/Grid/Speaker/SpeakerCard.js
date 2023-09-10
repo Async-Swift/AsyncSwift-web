@@ -1,13 +1,24 @@
-import styles from "../../../../styles/modules/Speaker.module.css";
+import styles from "/styles/modules/Speaker.module.css";
 
 import Image from "next/image";
 
-const SpeakerCard = ({ type, sessionTitle, sessionDescription, speakerName, speakerCompany, speakerDescription }) => {
+const SpeakerCard = ({
+  type,
+  sessionTitle,
+  sessionDescription,
+  speakerName,
+  speakerCompany,
+  speakerDescription,
+}) => {
   const speakerImageUrl = `/speaker/${speakerName}.png`;
 
   return (
     <div className={styles.speakerSessionContainer}>
-      <div className={type === "Main" ? styles.mainIntroTitle : styles.talkIntroTitle}>
+      <div
+        className={
+          type === "Main" ? styles.mainIntroTitle : styles.talkIntroTitle
+        }
+      >
         <h4>{`${type} Session`}</h4>
       </div>
       <div className={styles.sessionContainer}>
@@ -23,11 +34,14 @@ const SpeakerCard = ({ type, sessionTitle, sessionDescription, speakerName, spea
             alt={`${speakerName}연사자님 사진`}
             style={{
               maxWidth: "100%",
-              height: "auto"
-            }} />
+              height: "auto",
+            }}
+          />
         </div>
         <div className={styles.speakerIntroduceContainer}>
-          <div>{speakerName === "이준영" ? "최원혁 / 이준영" : speakerName}</div>
+          <div>
+            {speakerName === "이준영" ? "최원혁 / 이준영" : speakerName}
+          </div>
           <div>{speakerCompany}</div>
           <div>{speakerDescription}</div>
         </div>

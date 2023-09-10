@@ -1,5 +1,5 @@
 import SubScription from "../components/SubScription";
-import styles from "../../styles/modules/Description.module.css";
+import styles from "/styles/modules//Description.module.css";
 import SNS from "../components/SNS";
 
 const Description = () => {

@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import SNS from "./SNS";
 import Ticket from "./Ticket";
-import LogoFile from "../../public/LogoHorizental.png";
-import style from "../../styles/modules/Header.module.css";
-import InfoStyle from "../../styles/modules/Info.module.css";
+import LogoFile from "/public/LogoHorizental.png";
+import style from "/styles/modules/Header.module.css";
+import InfoStyle from "/styles/modules/Info.module.css";
 
 const Header = () => {
   return (
@@ -19,8 +19,9 @@ const Header = () => {
               height={40}
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
           </Link>
 
           <SNS locationClassName={InfoStyle.getInfo}></SNS>

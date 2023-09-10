@@ -1,4 +1,4 @@
-import styles from "../../styles/modules/Onboarding.module.css";
+import styles from "/styles/modules/Onboarding.module.css";
 
 const Onboarding = () => {
   return (
