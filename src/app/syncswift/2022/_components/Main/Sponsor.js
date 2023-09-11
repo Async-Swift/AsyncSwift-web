@@ -45,7 +45,6 @@ const Sponser = () => {
           <div className={styles.smallSponsor}>
             <a href="https://codershigh.github.io/WebSite/#/">
               <Image
-                className="imagePadding"
                 alt="codershigh"
                 src={codershigh}
                 width={280}
@@ -73,7 +72,6 @@ const Sponser = () => {
 
           <div className={styles.smallSponsor}>
             <Image
-              className="imagePadding"
               alt="sponsor2"
               src={sponsor2}
               width={280}

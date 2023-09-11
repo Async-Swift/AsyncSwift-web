@@ -1,5 +1,5 @@
+import SpeakerCard from "../Grid/Speaker/SpeakerCard";
 import styles from "/styles/modules/Speaker.module.css";
-import SpeakerCard from "../components/Grid/Speaker/SpeakerCard";
 
 const Speaker = () => {
   const mainSessionSpeakers = [

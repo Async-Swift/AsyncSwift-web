@@ -1,6 +1,6 @@
-import SubScription from "../components/SubScription";
+import SNS from "../SNS";
+import SubScription from "../SubScription";
 import styles from "/styles/modules//Description.module.css";
-import SNS from "../components/SNS";
 
 const Description = () => {
   const descriptionMessage = {};

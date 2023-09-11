@@ -1,6 +1,5 @@
+import OrganizerGrid from "../Grid/Organizer/OrganizerGrid";
 import styles from "/styles/modules/Organizer.module.css";
-
-import OrganizerGrid from "../components/Grid/Organizer/OrganizerGrid";
 
 const Organizer = () => {
   const organizers = [

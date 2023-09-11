@@ -1,4 +1,4 @@
-import SubScription from "../components/SubScription";
+import SubScription from "../_components/SubScription";
 
 const AppInfo = () => {
   return (
