@@ -141,6 +141,10 @@ a {
   cursor: pointer;
 }
 
+@supports (-webkit-touch-callout: none) {
+  height: -webkit-fill-available;
+}
+
 a:link {
   text-decoration: none;
 }
