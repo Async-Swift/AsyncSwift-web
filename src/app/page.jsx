@@ -1,10 +1,10 @@
+import { cookies } from "next/headers";
 import Image from "next/image";
-import AsyncSwiftLogo from "/public/AsyncLogo.png";
-import TBDDesign from "/public/syncswift-2023-tbd-design.png";
 
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
-import { cookies } from "next/headers";
 
+import AsyncSwiftLogo from "/public/AsyncLogo.png";
+import TBDDesign from "/public/syncswift-2023-tbd-design.png";
 import Footer from "./_views/_layouts/Footer";
 import { CONFERENCE } from "../utils/consts";
 
@@ -12,16 +12,16 @@ export default async function Page({}) {
   const supabase = createServerComponentClient({ cookies });
 
   let {
-    data: [Conference, ...arg],
+    data: [{ title, subtitle, date, location }, ...arg],
     error,
-  } = await supabase.from("Conference").select("*");
+  } = await supabase.from("conference").select("*");
 
   return (
     <main className="w-full h-screen">
       <div className=" flex flex-col justify-between w-full h-full">
         <header className="flex justify-between w-full pt-9 pl-11 pr-16 max-sm:flex-col-reverse max-sm:gap-6 max-sm:pt-12 max-sm:pl-4">
           <div className="text-3xl font-bold">
-            <div>{Conference.conference_title}</div>
+            <div>{title}</div>
             <div>{CONFERENCE.TEXT}</div>
           </div>
 
@@ -33,13 +33,11 @@ export default async function Page({}) {
           </div>
           <div className="mt">
             <div className="text-center text-white text-3xl font-extralight">
-              {Conference.conference_subtitle}
+              {subtitle}
             </div>
             <div className="text-center text-white text-opacity-50 text-base font-light leading-relaxed mt-2">
-              {new Intl.DateTimeFormat("ko-KR").format(
-                new Date(Conference.conference_date)
-              )}{" "}
-              {Conference.conference_location}
+              {new Intl.DateTimeFormat("ko-KR").format(new Date(date))}{" "}
+              {location}
             </div>
           </div>
         </div>

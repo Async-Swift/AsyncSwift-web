@@ -85,3 +85,5 @@ coverage
 .env
 
 *.env
+*.env.development
+*.env.production

@@ -3,31 +3,28 @@ import "../../../../styles/global.css";
 import * as gtag from "../../../../lib/gtag";
 
 export const metadata = {
-  title: {
-    template: "AsyncSwift | %s",
-    default: "Welcome 😆",
-  },
+  title: "SyncSwift2022",
   viewport: {
     width: "device-width",
     initialScale: 1,
     maximumScale: 1,
   },
   openGraph: {
-    title: "AsyncSwift",
+    title: "SyncSwift2022",
     type: "website",
-    siteName: "AsyncSwift",
+    siteName: "SyncSwift2022",
     description:
-      "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다.",
-    url: '"https://www.asyncswift.com/"',
+      "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다. AsyncSwift에서 SyncSwift 2022 컨퍼런스를 개최합니다!",
+    url: "https://www.asyncswift.com/syncswift/2022",
     images: "/favicons/apple-icon.png",
     card: "/favicons/apple-icon.png",
     locale: "ko_KR",
   },
   twitter: {
-    title: "AsyncSiwft",
+    title: "SyncSwift2022",
     card: "/favicons/apple-icon.png",
     description:
-      "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다.",
+      "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다. AsyncSwift에서 SyncSwift 2022 컨퍼런스를 개최합니다!",
     siteId: "1467726470533754880",
     creator: "@nextjs",
     creatorId: "1467726470533754880",
@@ -55,7 +52,7 @@ export const metadata = {
   creator: "Black Raven",
   publisher: "AsyncSwift",
   description:
-    "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다.",
+    "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다. AsyncSwift에서 SyncSwift 2022 컨퍼런스를 개최합니다!",
   publishedTime: "Wed, 05 Oct 2022 20:00:00",
   manifest: "/favicons/manifest.json",
   icons: {
