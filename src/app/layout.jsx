@@ -3,7 +3,7 @@ import "../../styles/global.css";
 import * as gtag from "../../lib/gtag";
 
 export const metadata = {
-  // metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN),
   title: {
     template: "AsyncSwift | %s",
     default: "Welcome to AsyncSwift",
