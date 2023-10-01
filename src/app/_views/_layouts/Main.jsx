@@ -20,7 +20,7 @@ export default function Main({ subtitle, location, date }) {
           </div>
         </div>
       </div>
-      {/* <div className="flex items-center justify-center w-full max-sm:mt-60">
+      <div className="flex items-center justify-center w-full max-sm:mt-60">
         <div className="flex flex-col justify-center border-[#D9D9D9] border-opacity-50 border border-solid w-full p-10 rounded-lg max-w-[610px] h-[400px] max-sm:mx-6">
           <div className="text-5xl font-bold text-white text-opacity-80 font-['Montserrat']">
             SyncSwift 2023
@@ -55,7 +55,7 @@ export default function Main({ subtitle, location, date }) {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
