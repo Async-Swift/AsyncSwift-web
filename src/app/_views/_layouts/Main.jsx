@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import TBDDesign from "/public/syncswift-2023-tbd-design.png";
+import Link from "next/link";
 
 export default function Main({ subtitle, location, date }) {
   return (
@@ -32,10 +33,24 @@ export default function Main({ subtitle, location, date }) {
           </ul>
           <div className="flex flex-col w-full gap-5 mt-16 text-3xl font-normal">
             <button className="font-['Montserrat'] bg-[#D9D9D9] bg-opacity-5 border-[#D9D9D9] border-opacity-50 border border-solid h-28 rounded-lg hover:bg-[#D9D9D9] hover:bg-opacity-40">
-              get General Ticket
+              <Link
+                href={
+                  "https://smartstore.naver.com/asyncswift/products/9280007233"
+                }
+                target="_blank"
+              >
+                get General Ticket
+              </Link>
             </button>
             <button className="font-['Montserrat'] bg-[#D9D9D9] bg-opacity-5 border-[#D9D9D9] border-opacity-50 border border-solid h-28 rounded-lg hover:bg-[#D9D9D9] hover:bg-opacity-40">
-              get Scholarship Ticket
+              <Link
+                href={
+                  "https://smartstore.naver.com/asyncswift/products/9304388305"
+                }
+                target="_blank"
+              >
+                get Scholarship Ticket
+              </Link>
             </button>
           </div>
         </div>

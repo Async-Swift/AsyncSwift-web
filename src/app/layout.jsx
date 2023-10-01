@@ -6,7 +6,7 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN),
   title: {
     template: "AsyncSwift | %s",
-    default: "Welcome 😆",
+    default: "Welcome to AsyncSwift",
   },
   viewport: {
     width: "device-width",

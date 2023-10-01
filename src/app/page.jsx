@@ -1,5 +1,4 @@
 import { cookies } from "next/headers";
-import Image from "next/image";
 
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
