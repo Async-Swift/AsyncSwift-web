@@ -26,7 +26,7 @@ export default async function Page({}) {
       <div className="flex flex-col justify-between w-full h-full ">
         <Header title={title} />
         <Main subtitle={subtitle} location={location} date={date} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </main>
   );
