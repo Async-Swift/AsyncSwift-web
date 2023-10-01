@@ -1,18 +1,19 @@
-import { cookies } from "next/headers";
+import { headers } from "next/headers";
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
+import { RequestCookies } from "@edge-runtime/cookies";
 import { cache } from "react";
 
 import Header from "./_views/_layouts/Header";
 import Main from "./_views/_layouts/Main";
 import Footer from "./_views/_layouts/Footer";
 
-export const createServerSupabaseClient = cache(() => {
-  const cookieStore = cookies();
-  return createServerComponentClient({ cookies: () => cookieStore });
+export const createSupabase = cache(() => {
+  const cookies = new RequestCookies(headers());
+  return createServerComponentClient({ cookies: () => cookies });
 });
 
 export default async function Page({}) {
-  const supabase = createServerSupabaseClient();
+  const supabase = createSupabase();
   try {
     let {
       data: [{ title, subtitle, date, location }, ...arg],
