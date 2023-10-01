@@ -1,6 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
+  '@edge-runtime/cookies':
+    specifier: ^4.0.0
+    version: 4.0.0
   '@supabase/auth-helpers-nextjs':
     specifier: ^0.7.4
     version: 0.7.4(@supabase/supabase-js@2.33.2)
@@ -52,6 +59,11 @@ packages:
     dependencies:
       regenerator-runtime: 0.14.0
     dev: true
+
+  /@edge-runtime/cookies@4.0.0:
+    resolution: {integrity: sha512-PPgW/669apZqT3qUOa4JV0ctXQ7ayCNiklKXDD1z5fC7aemWrjpZ7r0Na7yQ96Fp673pNF5lzpfTJh26sWaGDg==}
+    engines: {node: '>=16'}
+    dev: false
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.41.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
