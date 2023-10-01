@@ -2,8 +2,9 @@ import Image from "next/image";
 
 import TBDDesign from "/public/syncswift-2023-tbd-design.png";
 import Link from "next/link";
+import { CONFERENCE } from "../../../utils/consts";
 
-export default function Main({ subtitle, location, date }) {
+export default function Main({}) {
   return (
     <div className="mt-32 sm:grid sm:grid-cols-2 sm:gap-5">
       <div className="flex flex-col items-center justify-center gap-12">
@@ -12,11 +13,11 @@ export default function Main({ subtitle, location, date }) {
         </div>
         <div className="mt-12">
           <div className="text-4xl text-center text-white font-['Noto Sans'] font-extralight">
-            {subtitle && subtitle}
+            {CONFERENCE.SUBTITLE}
           </div>
           <div className="mt-2 text-3xl font-light leading-relaxed text-center text-white text-opacity-50">
-            {date && new Intl.DateTimeFormat("ko-KR").format(new Date(date))}{" "}
-            {location && location}
+            {new Intl.DateTimeFormat("ko-KR").format(new Date(CONFERENCE.DATE))}{" "}
+            {CONFERENCE.LOCATION}
           </div>
         </div>
       </div>
