@@ -14,6 +14,8 @@ export default async function Page({}) {
     error,
   } = await supabase.from("conference").select("*");
 
+  if (error) return <p>Error</p>;
+
   return (
     <main className="w-full h-screen">
       <div className="flex flex-col justify-between w-full h-full ">
