@@ -6,7 +6,7 @@ import { CONFERENCE } from "../../../utils/consts";
 
 export default function Main({}) {
   return (
-    <div className="mt-32 sm:grid sm:grid-cols-2 sm:gap-5">
+    <div className="px-10 mt-32 sm:grid sm:grid-cols-2 sm:gap-5">
       <div className="flex flex-col items-center justify-center gap-12">
         <div className="w-10/12">
           <Image alt="SyncSwift 2023 TBD Design" src={TBDDesign}></Image>
@@ -22,7 +22,7 @@ export default function Main({}) {
         </div>
       </div>
       <div className="flex items-center justify-center w-full max-sm:mt-60">
-        <div className="flex flex-col justify-center border-[#D9D9D9] border-opacity-50 border border-solid w-full p-10 rounded-lg max-w-[610px] h-[400px] max-sm:mx-6">
+        <div className="flex flex-col justify-center border-[#D9D9D9] border-opacity-50 border border-solid w-full p-10 rounded-lg max-w-[610px] h-[400px] ">
           <div className="text-5xl font-bold text-white text-opacity-80 font-['Montserrat']">
             SyncSwift 2023
           </div>
