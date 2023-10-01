@@ -12,10 +12,11 @@ export default function Main({ subtitle, location, date }) {
         </div>
         <div className="mt-12">
           <div className="text-4xl text-center text-white font-['Noto Sans'] font-extralight">
-            {subtitle}
+            {subtitle && subtitle}
           </div>
           <div className="mt-2 text-3xl font-light leading-relaxed text-center text-white text-opacity-50">
-            {new Intl.DateTimeFormat("ko-KR").format(new Date(date))} {location}
+            {date && new Intl.DateTimeFormat("ko-KR").format(new Date(date))}{" "}
+            {location && location}
           </div>
         </div>
       </div>
