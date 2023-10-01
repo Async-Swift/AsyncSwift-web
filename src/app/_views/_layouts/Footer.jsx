@@ -23,7 +23,7 @@ export default function Footer({}) {
 
   return (
     <footer
-      className={`flex justify-end w-full pr-16 h-30 pb-11 max-sm:justify-start max-sm:flex-col max-sm:pl-4 ${
+      className={`flex  w-full pl-16 h-30 pb-11 max-sm:justify-start max-sm:flex-col max-sm:pl-4 ${
         isSafariInMobile ? "max-sm:pb-44" : ""
       }`}
     >
