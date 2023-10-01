@@ -6,6 +6,8 @@ import Header from "./_views/_layouts/Header";
 import Main from "./_views/_layouts/Main";
 import Footer from "./_views/_layouts/Footer";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page({}) {
   const supabase = createServerComponentClient({ cookies });
 
