@@ -21,8 +21,8 @@ export default function Main() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center w-full max-sm:mt-60 max-w-[800px] sm:p-12">
-        <div className="flex flex-col justify-between border-[#D9D9D9] border-opacity-50 border border-solid w-full sm:p-16 rounded-lg max-w-[610px] sm:m-12 px-5 py-10">
+      <div className="flex items-center justify-center w-full max-sm:mt-60 max-w-[800px] sm:p-20">
+        <div className="flex flex-col justify-between border-[#D9D9D9] border-opacity-50 border border-solid w-full sm:p-16 rounded-lg max-w-[610px] px-5 py-10">
           <div>
             <div className="text-4xl font-bold text-white sm:text-5xl text-opacity-80 font-mont">
               SyncSwift 2023
