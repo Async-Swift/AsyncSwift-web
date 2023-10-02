@@ -27,7 +27,7 @@ export default function Footer({}) {
         isSafariInMobile ? "max-sm:pb-44" : ""
       }`}
     >
-      <div className="hidden text-base font-normal leading-none text-zinc-500 max-sm:block">
+      <div className="hidden text-lg font-normal leading-none text-zinc-500 max-sm:block">
         To get latest information
       </div>
       <div className="flex items-center gap-8 mt-6">
