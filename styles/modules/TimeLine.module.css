@@ -19,6 +19,7 @@
 .imageBox {
   margin-top: 4rem;
   position: relative;
+  z-index: -10;
   max-width: 118rem;
   aspect-ratio: 0.7243707796;
   align-self: center;

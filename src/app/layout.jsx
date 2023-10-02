@@ -1,11 +1,25 @@
 import Script from "next/script";
 import "../../styles/global.css";
 import * as gtag from "../../lib/gtag";
+import { Montserrat, Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN),
   title: {
     template: "AsyncSwift | %s",
-    default: "Welcome 😆",
+    default: "Welcome to AsyncSwift",
   },
   viewport: {
     width: "device-width",
@@ -56,7 +70,7 @@ export const metadata = {
   publisher: "AsyncSwift",
   description:
     "Apple 생태계 속에서 헤엄치는 사람들의 커뮤니티. AsyncSwift 입니다.",
-  publishedTime: "Wed, 05 Oct 2022 20:00:00",
+  publishedTime: "Mon, 11 Sep 2023 20:00:00",
   manifest: "/favicons/manifest.json",
   icons: {
     icon: [
@@ -133,18 +147,20 @@ export const metadata = {
   // },
 };
 
+// export const dynamic = "force-dynamic";
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${inter.variable} ${montserrat.variable}`}>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}`}
       />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){ dataLayer.push(arguments); }
           gtag('js', new Date());
-          gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS});
+          gtag('config', ${`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`});
         `}
       </Script>
       <body>{children}</body>

@@ -4,7 +4,7 @@ const Onboarding = () => {
   return (
     <section className={styles.onboarding}>
       <main>
-        <div className={styles.info}>
+        <div>
           <h1>Nesting</h1>
           <h4>
             SyncSwift 2022
