@@ -1,6 +1,19 @@
 import Script from "next/script";
 import "../../styles/global.css";
 import * as gtag from "../../lib/gtag";
+import { Montserrat, Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN),
@@ -138,7 +151,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={`${inter.variable} ${montserrat.variable}`}>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}`}
       />
