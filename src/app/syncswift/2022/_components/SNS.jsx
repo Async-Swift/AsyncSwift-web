@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import notion from "/public/notion.png";
-import twitter from "/public/twitter.png";
-import instagram from "/public/instagram.png";
-import linkedIn from "/public/linkedin.png";
-import youtube from "/public/youtube.png";
+import notion from "/public/syncswift2022/sns/notion.png";
+import twitter from "/public/syncswift2022/sns/twitter.png";
+import instagram from "/public/syncswift2022/sns/instagram.png";
+import linkedIn from "/public/syncswift2022/sns/linkedin.png";
+import youtube from "/public/syncswift2022/sns/youtube.png";
 
 import style from "/styles/modules/Info.module.css";
 

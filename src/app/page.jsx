@@ -4,8 +4,9 @@
 // import { cache } from "react";
 
 import Header from "./_views/_layouts/Header";
-import Main from "./_views/_layouts/Main";
 import Footer from "./_views/_layouts/Footer";
+import Section from "./_views/_layouts/Section";
+import Canvas from "./_views/_layouts/Canvas";
 
 // export const createSupabase = cache(() => {
 //   const cookies = new RequestCookies(headers());
@@ -23,10 +24,11 @@ export default async function Page({}) {
   //   if (error) return <p>Error</p>;
 
   return (
-    <main className="w-full h-screen">
+    <main className="w-full">
       <div className="flex flex-col justify-between w-full h-full ">
         <Header />
-        <Main />
+        <Canvas />
+        <Section />
         <Footer />
       </div>
     </main>

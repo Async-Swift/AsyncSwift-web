@@ -7,3 +7,7 @@ export const CONFERENCE = {
   LOCATION: "Pohang",
   DATE: "2023-10-21 04:00:00+00",
 };
+
+export const ASYNCSWIFT = {
+  EMIAL: "asyncswift@gmail.com",
+};
