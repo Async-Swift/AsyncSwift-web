@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import LogoFile from "/public/AsyncLogo.png";
+import LogoFile from "/public/logo.png";
 import styles from "/styles/modules/Footer.module.css";
 
 const Footer = () => {
