@@ -409,16 +409,16 @@ const Copyright = () => {
 export default function Section() {
   return (
     <div className="flex flex-col items-center w-full h-full md:px-10">
-      <div className="z-40 w-full max-w-[1200px] backdrop-blur-lg  bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:px-6 px-4 lg:px-[100px]">
+      <div className="z-40 w-full max-w-[1200px] backdrop-blur-md  bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:px-6 px-4 lg:px-[100px]">
         <Description />
         <Program />
         <Speaker />
       </div>
-      <div className="z-40 w-full max-w-[1200px] backdrop-blur-lg bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:pl-6  px-4 mt-48 py-52">
+      <div className="z-40 w-full max-w-[1200px] backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:pl-6  px-4 mt-48 py-52">
         <ConferenceMap />
         <TimeTable />
       </div>
-      <div className="z-40 w-full max-w-[1000px] flex flex-col mt-[347px] sm:px-[100px] px-4 backdrop-blur-lg bg-[#4A4A4A] bg-opacity-20 rounded-3xl sm:py-52 py-20">
+      <div className="z-40 w-full max-w-[1000px] flex flex-col mt-[347px] sm:px-[100px] px-4 backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl sm:py-52 py-20">
         <Sponser />
         <Copyright />
       </div>

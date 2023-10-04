@@ -2,7 +2,7 @@ import { ASYNCSWIFT } from "../../../utils/consts";
 
 export default function Footer({}) {
   return (
-    <footer className="w-full bg-[#FFFFFF] bg-opacity-20 py-16 sm:px-[100px] px-4 mt-20">
+    <footer className="w-full bg-[#404040]  py-16 sm:px-[100px] px-4 mt-20 z-50">
       <div className="px-6 font-light leading-relaxed sm:text-2xl">
         <p>SyncSwift 2023</p>
         <p>2023년 10월 21일 13:00 ~ 21:00</p>

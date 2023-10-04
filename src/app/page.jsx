@@ -9,6 +9,7 @@ import Footer from "./_views/_layouts/Footer";
 import Section from "./_views/_layouts/Section";
 import Image from "next/image";
 import Banner from "/public/syncswift2023/banner.png";
+import VBanner from "/public/syncswift2023/syncswift2023-keylogo-vertical.png";
 
 const Canvas = dynamic(() => import("./_views/_layouts/Canvas"), {
   ssr: false,
@@ -35,7 +36,17 @@ export default async function Page({}) {
         <Header />
         {/* <Canvas /> */}
         <div className="sticky top-0 flex items-center justify-center w-full pb-20 h-banner -z-50 ">
-          <Image alt="syncswift2023 key design image" src={Banner}></Image>
+          <Image
+            alt="syncswift2023 key design image"
+            src={Banner}
+            className="hidden sm:block"
+          ></Image>
+
+          <Image
+            alt="syncswift2023 key design image"
+            src={VBanner}
+            className="block p-24 sm:hidden"
+          ></Image>
         </div>
         <Section />
         <Footer />
