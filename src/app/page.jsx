@@ -7,6 +7,8 @@ import dynamic from "next/dynamic";
 import Header from "./_views/_layouts/Header";
 import Footer from "./_views/_layouts/Footer";
 import Section from "./_views/_layouts/Section";
+import Image from "next/image";
+import Banner from "/public/syncswift2023/banner.png";
 
 const Canvas = dynamic(() => import("./_views/_layouts/Canvas"), {
   ssr: false,
@@ -32,6 +34,9 @@ export default async function Page({}) {
       <div className="flex flex-col justify-between w-full h-full ">
         <Header />
         {/* <Canvas /> */}
+        <div className="sticky top-0 flex items-center justify-center w-full pb-20 h-banner -z-50 ">
+          <Image alt="syncswift2023 key design image" src={Banner}></Image>
+        </div>
         <Section />
         <Footer />
       </div>

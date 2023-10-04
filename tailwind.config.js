@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        banner: "calc(100vh - 80px)",
+      },
       fontFamily: {
         sans: ["var(--font-inter)"],
         mont: ["var(--font-montserrat)"],

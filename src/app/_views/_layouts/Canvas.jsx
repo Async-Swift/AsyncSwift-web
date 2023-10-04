@@ -34,7 +34,7 @@ export default function Canvas() {
   return (
     <section
       ref={p5ContainerRef}
-      className="top-0 flex items-center justify-center w-full h-screen bg-red-200 bg-opacity-40 -z-50 animate-fadeIn"
+      className="top-0 flex items-center justify-center w-full bg-red-200 h-banner bg-opacity-40 -z-50 animate-fadeIn"
     ></section>
   );
 }
