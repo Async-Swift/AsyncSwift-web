@@ -31,7 +31,7 @@ export default async function Page({}) {
     <main className="w-full">
       <div className="flex flex-col justify-between w-full h-full ">
         <Header />
-        <Canvas />
+        {/* <Canvas /> */}
         <Section />
         <Footer />
       </div>

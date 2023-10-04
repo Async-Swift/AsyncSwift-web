@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-import ConferenceMapImage from "/public/map.png";
-import OpenUpLogo from "/public/openup.png";
-import AsyncLogo from "/public/AsyncLogo.png";
-import SyncSwift2023Logo from "/public/sync2023-keylogo.png";
+import ConferenceMapImage from "/public/syncswift2023/map/map.png";
+import OpenUpLogo from "/public/syncswift2023/sponsor/openup.png";
+import AsyncLogo from "/public/logo-text.png";
+import SyncSwift2023Logo from "/public/syncswift2023/sync2023-keylogo.png";
 import { Session, Title } from "../../../components";
-import { ASYNCSWIFT, CONFERENCE } from "../../../utils/consts";
+import { ASYNCSWIFT, CONFERENCE, SPEAKERES_FULL } from "../../../utils/consts";
 
 const Description = () => {
   return (
     <section className="mt-[200px] flex flex-col items-center gap-[120px]">
       <div className="max-w-[720px]">
         <Image
-          alt="컨퍼런스 지도 이미지 입니다."
+          alt="SyncSwift 2023 키디자인 이미지입니다."
           src={SyncSwift2023Logo}
         ></Image>
       </div>
@@ -23,10 +23,7 @@ const Description = () => {
         </div>
       </div>
       <div className="flex flex-col items-center font-light leading-loose text-white">
-        <div className="text-2xl">
-          2023.<span className="text-4xl">10. 21</span>. SAT{" "}
-          <span className="text-4xl">1:00 PM - 9:00 PM</span>
-        </div>
+        <div className="text-2xl">2023.10. 21. SAT 1:00 PM - 9:00 PM</div>
         <div className="text-2xl">체인지업 그라운드 2층, 경상북도 포항</div>
       </div>
     </section>
@@ -85,7 +82,12 @@ const Program = () => {
               <div className="text-[17px]">
                 <div className="opacity-50 ">주디</div>
                 <div className="mt-4 opacity-80">
-                  곧 공개될 예정입니다! 잠시만 기다려주세요 😉
+                  참가자들은 작게 팀을 만들고 Organizer의 가이딩을 따라 Apple의
+                  Human Interface Guideline의 문서를 함께 스터디하고 사례를
+                  수집한 후 세션 종료와 함께 한국의 애플 생태계 구성원들에게
+                  결과물을 배포합니다! 애플 생태계의 구성원들이 내가 배포한
+                  문서들을 참고하며 공부하고 일한다고 생각하면 너무 설레지
+                  않나요?
                 </div>
               </div>
             </div>
@@ -125,27 +127,29 @@ const Program = () => {
 };
 
 const Speaker = () => {
-  const temp = Array(8).fill(1);
   return (
     <section className="flex flex-col justify-center mt-60">
       <Title>Speaker</Title>
       <div className="grid grid-flow-col grid-rows-2 mt-32 max-sm:justify-center gap-y-28 max-lg:grid-rows-3 max-md:grid-rows-4 max-md:gap-x-6">
-        {temp.map((_, i) => (
-          <div key={i} className="flex flex-col items-center gap-2">
-            <div className="w-[180px] h-[180px] bg-slate-50 bg-opacity-20 rounded-full"></div>
-            <div>이름</div>
-            <div>직급</div>
-          </div>
+        {SPEAKERES_FULL.map(({ name, introduction, imageURL }, i) => (
+          <ul
+            key={`${name}_${i}`}
+            className="flex flex-col items-center gap-2 text-center"
+          >
+            <div className="rounded-full bg-slate-50 bg-opacity-20">
+              <Image
+                alt={`연사자 ${name}님의 사진입니다.`}
+                src={imageURL}
+                className=""
+                width={180}
+                height={180}
+              ></Image>
+            </div>
+            <li>{name}</li>
+            <li className="whitespace-pre">{introduction}</li>
+          </ul>
         ))}
       </div>
-    </section>
-  );
-};
-
-const TimeTable = () => {
-  return (
-    <section className="mt-[200px]">
-      <Title>Time Table</Title>
     </section>
   );
 };
@@ -159,6 +163,19 @@ const ConferenceMap = () => {
         src={ConferenceMapImage}
         width={1000}
       ></Image>
+    </section>
+  );
+};
+
+const TimeTable = () => {
+  return (
+    <section className="mt-[200px]">
+      <Title>Time Table</Title>
+      <div className="flex gap-4 mt-20 ">
+        <div className="md:grow-0"></div>
+        <div className="">Event Hall</div>
+        <div className="">Media Wall</div>
+      </div>
     </section>
   );
 };
@@ -199,8 +216,8 @@ export default function Section() {
         <Description />
         <Program />
         <Speaker />
-        <TimeTable />
         <ConferenceMap />
+        <TimeTable />
       </div>
       <div className="w-full max-w-[1000px] flex flex-col mt-[347px] px-[100px]">
         <Sponser />

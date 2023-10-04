@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import AsyncSwiftLogo from "/public/LogoHorizental.png";
+import AsyncSwiftLogo from "/public/logo-horizontal.png";
 import Instagram from "/public/sns-icons/instagram.png";
 import Youtube from "/public/sns-icons/youtube.png";
 import LinkedIn from "/public/sns-icons/linkedIn.png";
