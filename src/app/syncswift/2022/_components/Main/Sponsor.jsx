@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "/styles/modules/Sponsor.module.css";
 
-import codershigh from "/public/sponsor/codershigh.png";
-import samt from "/public/sponsor/samt.png";
-import openup from "/public/sponsor/openup.png";
-import sponsor1 from "/public/sponsor/sponsor1.png";
-import sponsor2 from "/public/sponsor/sponsor2.png";
-import sponsor3 from "/public/sponsor/sponsor3.png";
+import codershigh from "/public/syncswift2022/sponsor/codershigh.png";
+import samt from "/public/syncswift2022/sponsor/samt.png";
+import openup from "/public/syncswift2022/sponsor/openup.png";
+import sponsor1 from "/public/syncswift2022/sponsor/sponsor1.png";
+import sponsor2 from "/public/syncswift2022/sponsor/sponsor2.png";
+import sponsor3 from "/public/syncswift2022/sponsor/sponsor3.png";
 
 const Sponser = () => {
   return (

@@ -2,11 +2,19 @@
 // import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 // import { RequestCookies } from "@edge-runtime/cookies";
 // import { cache } from "react";
+import dynamic from "next/dynamic";
 
 import Header from "./_views/_layouts/Header";
-import Main from "./_views/_layouts/Main";
 import Footer from "./_views/_layouts/Footer";
+import Section from "./_views/_layouts/Section";
+import Image from "next/image";
+import Banner from "/public/syncswift2023/banner.png";
+import VBanner from "/public/syncswift2023/syncswift2023-keylogo-vertical.png";
 
+const Canvas = dynamic(() => import("./_views/_layouts/Canvas"), {
+  ssr: false,
+  loading: () => <section className="w-full h-screen"></section>,
+});
 // export const createSupabase = cache(() => {
 //   const cookies = new RequestCookies(headers());
 //   return createServerComponentClient({ cookies: () => cookies });
@@ -23,10 +31,24 @@ export default async function Page({}) {
   //   if (error) return <p>Error</p>;
 
   return (
-    <main className="w-full h-screen">
+    <main className="w-full">
       <div className="flex flex-col justify-between w-full h-full ">
         <Header />
-        <Main />
+        <Canvas />
+        <div className="fixed top-0 flex items-center justify-center w-full h-banner -z-50 ">
+          <Image
+            alt="syncswift2023 key design image"
+            src={Banner}
+            className="hidden sm:block"
+          ></Image>
+
+          <Image
+            alt="syncswift2023 key design image"
+            src={VBanner}
+            className="block p-24 sm:hidden"
+          ></Image>
+        </div>
+        <Section />
         <Footer />
       </div>
     </main>

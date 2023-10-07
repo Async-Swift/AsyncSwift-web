@@ -4,14 +4,14 @@ import Onboarding from "./_components/Onboarding/Onboarding";
 import Image from "next/image";
 import SNS from "./_components/SNS";
 import Ticket from "./_components/Ticket";
-import LogoFile from "/public/LogoHorizental.png";
+import LogoFile from "/public/logo-horizontal.png";
 
 export default function Page({}) {
   return (
     <main className="w-screen h-full">
       <div className="relative w-full h-full">
         <header className="fixed w-screen top-0 py-[20px] px-[40px] bg-[rgba(0,0,0,0.6)] backdrop-blur-[5px]  max-lg:py-[20px] max-lg:px-[16px]">
-          <div className="flex items-center justify-between  w-full h-full ">
+          <div className="flex items-center justify-between w-full h-full ">
             <div className="w-full h-full">
               <Link href="/">
                 <Image
