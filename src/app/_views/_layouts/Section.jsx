@@ -41,6 +41,35 @@ const Description = () => {
   );
 };
 
+const Speaker = () => {
+  return (
+    <section className="flex flex-col justify-center pb-20 mt-60">
+      <Title>Speaker</Title>
+      <div className="grid justify-center grid-flow-col grid-rows-2 mt-32 gap-x-5 gap-y-28 max-lg:grid-rows-3 max-md:grid-rows-4 max-md:gap-x-8">
+        {SPEAKERES_FULL.map(({ name, company, imageURL }, i) => (
+          <div key={`${name}_${i}`} className="gap-4">
+            <ul className="flex flex-col items-center gap-2 text-center">
+              <div className="rounded-full bg-slate-50 bg-opacity-20 sm:w-[180px] sm:h-[180px] w-[120px] h-[120px]">
+                <Image
+                  alt={`연사자 ${name}님의 사진입니다.`}
+                  src={imageURL}
+                  className=""
+                  width={180}
+                  height={180}
+                ></Image>
+              </div>
+              <li className="mt-5 text-lg sm:text-xl">{name}</li>
+              <li className="whitespace-pre text-[#AFAFAF] leading-normal sm:text-lg text-xs">
+                {company}
+              </li>
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const Program = () => {
   return (
     <section className="my-60">
@@ -139,35 +168,6 @@ const Program = () => {
   );
 };
 
-const Speaker = () => {
-  return (
-    <section className="flex flex-col justify-center pb-20 mt-60">
-      <Title>Speaker</Title>
-      <div className="grid justify-center grid-flow-col grid-rows-2 mt-32 gap-x-5 gap-y-28 max-lg:grid-rows-3 max-md:grid-rows-4 max-md:gap-x-8">
-        {SPEAKERES_FULL.map(({ name, company, imageURL }, i) => (
-          <div key={`${name}_${i}`} className="gap-4">
-            <ul className="flex flex-col items-center gap-2 text-center">
-              <div className="rounded-full bg-slate-50 bg-opacity-20 sm:w-[180px] sm:h-[180px] w-[120px] h-[120px]">
-                <Image
-                  alt={`연사자 ${name}님의 사진입니다.`}
-                  src={imageURL}
-                  className=""
-                  width={180}
-                  height={180}
-                ></Image>
-              </div>
-              <li className="mt-5 text-lg sm:text-xl">{name}</li>
-              <li className="whitespace-pre text-[#AFAFAF] leading-normal sm:text-lg text-xs">
-                {company}
-              </li>
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
-
 const ConferenceMap = () => {
   return (
     <section className="flex flex-col items-center w-full gap-36">
@@ -177,6 +177,145 @@ const ConferenceMap = () => {
         src={ConferenceMapImage}
         width={1000}
       ></Image>
+    </section>
+  );
+};
+
+const Ticket = () => {
+  return (
+    <section className="flex flex-col items-center w-full gap-12">
+      <Title>Tickets</Title>
+      <div className="flex flex-col w-full gap-20 md:px-[100px] px-6">
+        <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col w-full gap-5">
+            <div className="rounded-lg bg-[#d9d9d926] border-[#d9d9d9] border border-solid border-opacity-50 w-full p-6 flex flex-col gap-2 leading-normal">
+              <div className="w-full">
+                <div>
+                  <h3 className="text-[#FF3E6D] md:text-[54px] font-bold text-[32px]">
+                    General Ticket
+                  </h3>
+                  <div className="text-[#d9d9d9] text-opacity-50 text-2xl ">
+                    총 수량 200매
+                  </div>
+                </div>
+                <div className="flex justify-end w-full md:text-[54px] text-[32px] font-thin">
+                  ₩ 47,000
+                </div>
+                <Link
+                  href={
+                    "https://smartstore.naver.com/asyncswift/products/9280007233"
+                  }
+                  target="_blank"
+                  className="w-full"
+                >
+                  <button
+                    type="button"
+                    className="px-10 py-5 font-mont hover:bg-[#d9d9d9] hover:bg-opacity-40 rounded-lg bg-[#d9d9d9] bg-opacity-5 w-full md:text-xl text-[17px] hover:duration-500"
+                  >
+                    Get General Ticket
+                  </button>
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-lg bg-[#d9d9d926] border-[#d9d9d9] border border-solid border-opacity-50 w-full p-6 flex flex-col gap-2 leading-normal">
+              <div className="w-full">
+                <div>
+                  <h3 className="text-[#FFA857] md:text-[54px] font-bold text-[32px]">
+                    Scholarship Ticket
+                  </h3>
+                  <div className="text-[#d9d9d9] text-opacity-50 text-2xl ">
+                    총 수량 50매
+                  </div>
+                </div>
+                <div className="flex justify-end w-full md:text-[54px] text-[32px] font-thin">
+                  ₩ 30,000
+                </div>
+                <Link
+                  href={
+                    "https://smartstore.naver.com/asyncswift/products/9304388305"
+                  }
+                  target="_blank"
+                  className="w-full"
+                >
+                  <button
+                    type="button"
+                    className="px-10 py-5 font-mont hover:bg-[#d9d9d9] hover:bg-opacity-40 rounded-lg bg-[#d9d9d9] bg-opacity-5 w-full md:text-xl text-[17px] hover:duration-500"
+                  >
+                    Get Scholarship Ticket
+                  </button>
+                </Link>
+
+                <div className="mt-2 text-xs leading-relaxed opacity-50 md:text-xl">
+                  <h3 className="font-bold whitespace-pre-line">
+                    {`아래의 대상자들은 스칼라십 티켓을 이용할 수 있습니다.
+                    입장시, 행사일 기준 1주일 이내(10/14 이후) 발급된 재학증명서를 확인합니다.`}
+                  </h3>
+                  <ul className="ml-5 list-disc">
+                    <li>공인된 초, 중, 고, 대학의 교육 기관에 등록된 자</li>
+                    <li>Apple Developer Academy에 등록된 자</li>
+                    <li>
+                      지난 6개월 이내에 공인 교육기관을 졸업하고 이후 공인
+                      교육기관의 합격을 기다리고 있거나 그러한 기관에 합격한 자
+                    </li>
+                    <li>
+                      휴학, 졸업 등으로 재학증명서 발급이 어려운 경우, 일반
+                      티켓을 이용해주세요.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-lg  border-[#d9d9d9] border border-solid border-opacity-50 w-full p-6 flex flex-col gap-2 leading-normal">
+          <div className="w-full">
+            <div>
+              <h3 className="text-[#7572F4] md:text-[54px] font-bold text-[32px]">
+                + Bus Option
+              </h3>
+            </div>
+            <div className="flex justify-end w-full md:text-[54px] text-[32px] font-thin">
+              + ₩ 49,000
+            </div>
+            <div className="mt-2 text-xs leading-relaxed opacity-50 md:text-xl">
+              <h3 className="font-bold whitespace-pre-line">
+                {`서울 양재-포항를 왕복하는 우등버스를 탑승할 수 있습니다.`}
+              </h3>
+              <ul className="ml-5 list-disc">
+                <li>
+                  버스는 당일 오전 8시 양재역 출발, 오후 9시 포항
+                  체인지업그라운드 출발입니다.
+                </li>
+                <li>
+                  신청인원이 충분하지 않은 경우 버스 대절이 취소될 수 있습니다.
+                </li>
+                <li>
+                  28명을 기준으로 모집중이며 선착순 인원이 넘을 경우, 상황에
+                  따라 일부 인원의 버스 옵션이 취소될 수 있습니다.
+                </li>
+                <li>
+                  버스 대절이 취소되는 경우, 참가 티켓은 환불 기간과 상관없이
+                  환불이 가능합니다.
+                </li>
+                <li>해당 옵션은 티켓 구매시 구매 가능합니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="text-xs leading-relaxed opacity-50 md:text-xl">
+          <h3 className="font-bold">티켓 구매 유의사항</h3>
+          <ul className="ml-5 list-disc">
+            <li>
+              티켓의 종류에 상관없이, 참가자들은 행사에서 제공되는 세션, 이벤트
+              참가, 굿즈 수령 등을 할 수 있습니다.
+            </li>
+            <li>
+              티켓은 한정된 수량으로 판매됩니다. 판매 일정보다 빠르게 매진될 수
+              있습니다.
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
@@ -292,6 +431,35 @@ const Copyright = () => {
   );
 };
 
+const Organizer = () => {
+  return (
+    <section className="flex flex-col justify-center pb-20 mt-60">
+      <Title>Speaker</Title>
+      <div className="grid justify-center grid-flow-col grid-rows-2 mt-32 gap-x-5 gap-y-28 max-lg:grid-rows-3 max-md:grid-rows-4 max-md:gap-x-8">
+        {SPEAKERES_FULL.map(({ name, company, imageURL }, i) => (
+          <div key={`${name}_${i}`} className="gap-4">
+            <ul className="flex flex-col items-center gap-2 text-center">
+              <div className="rounded-full bg-slate-50 bg-opacity-20 sm:w-[180px] sm:h-[180px] w-[120px] h-[120px]">
+                <Image
+                  alt={`연사자 ${name}님의 사진입니다.`}
+                  src={imageURL}
+                  className=""
+                  width={180}
+                  height={180}
+                ></Image>
+              </div>
+              <li className="mt-5 text-lg sm:text-xl">{name}</li>
+              <li className="whitespace-pre text-[#AFAFAF] leading-normal sm:text-lg text-xs">
+                {company}
+              </li>
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 export default function Section() {
   return (
     <div className="flex flex-col items-center w-full h-full md:px-10">
@@ -304,9 +472,13 @@ export default function Section() {
         <ConferenceMap />
         <TimeTable />
       </div>
+      <div className="z-40 w-full max-w-[1200px] backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:pl-6  px-4 mt-48 py-52">
+        <Ticket />
+      </div>
       <div className="z-40 w-full max-w-[1000px] flex flex-col mt-[347px] sm:px-[100px] px-4 backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl sm:py-52 py-20">
         <Sponser />
         <Copyright />
+        {/* <Organizer /> */}
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ import {
 } from "../../../utils/consts";
 
 const TimeTable = () => {
-  const [showDescription, setShowDescription] = useState(0);
+  const [showDescription, setShowDescription] = useState(8);
 
   return (
     <section className="mt-[200px]">

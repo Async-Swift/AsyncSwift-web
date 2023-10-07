@@ -1,6 +1,5 @@
 "use client";
 
-import { Fragment } from "react";
 import { CgMathPlus, CgMathMinus } from "react-icons/cg";
 /**
  * @param {String} time
@@ -31,7 +30,7 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
                 className="flex flex-col gap-2 p-4  bg-[#D9D9D9] w-full  rounded-lg bg-opacity-[15%] leading-relaxed border border-opacity-50 border-[#D9D9D9] border-solid"
                 onClick={() => handleClick(speaker.id, showDescription)}
               >
-                <div className="text-sm md:text-2xl">
+                <div className="text-sm leading-relaxed whitespace-pre-wrap md:text-2xl">
                   {speaker.sessionTitle}
                 </div>
                 <div className="text-xs opacity-50 md:text-lg max-md:flex max-md:justify-between">
@@ -39,9 +38,9 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
                   <div className="md:hidden ">
                     {speaker.id === showDescription ? (
                       <CgMathMinus />
-                    ) : (
+                    ) : speaker.id ? (
                       <CgMathPlus />
-                    )}
+                    ) : null}
                   </div>
                 </div>
               </div>

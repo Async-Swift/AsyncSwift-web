@@ -37,8 +37,8 @@ export const SPEAKERES_FULL = [
       "토스팀 최초의 Product Designer (Tools) 직무로 일하면서 팀원들이 쓰는 생산성 도구를 디자인했어요. '일하는 방식', '행복하게 일하는 방법'에 관심이 많은 디자이너이자 코치, 이것저것 하는 사람입니다. 인사이트를 공유하는 인스타 계정 @_y.note 운영중이에요. 팔로우 해주세요 🏃",
     sessionDescription:
       "디자이너로 일하던 평범(?)한 사람이 창업에 도전하며 6개월간 여러가지 시도를 한 이야기를 들려드릴게요. ",
-    sessionTitle: "11년차 디자이너가 토스 퇴사하고 하는 일",
-    location: CONFERENCE_LOCATIOM.MEDIA,
+    sessionTitle: "11년차 디자이너가 토스\n퇴사하고 하는 일",
+    location: CONFERENCE_LOCATIOM.EVENT,
     sessionTime: SESSION_TIME.SECOND,
   },
   {
@@ -50,8 +50,8 @@ export const SPEAKERES_FULL = [
       "도시공학과 전공이지만 도시 개발보다 앱 개발을 선택한 5년차 iOS 개발자입니다. 사이드 프로젝트로 시작한 북적북적을 더 잘 만들기 위해 최근 1인 개발자가 되었습니다.",
     sessionDescription:
       "유저수 50만명, 앱스토어 투데이, 구글 플레이 올해를 빛낸 앱 선정! 독서기록 앱 북적북적을 만들며 경험한 4년간의 성장 이야기를 공유합니다.",
-    sessionTitle: "사이드 프로젝트가 메인 JOB이 되기까지의 이야기",
-    location: CONFERENCE_LOCATIOM.MEDIA,
+    sessionTitle: "사이드 프로젝트가\n메인 JOB이 되기까지의 이야기",
+    location: CONFERENCE_LOCATIOM.EVENT,
     sessionTime: SESSION_TIME.THIRD,
   },
   {
@@ -63,8 +63,8 @@ export const SPEAKERES_FULL = [
       "4년간 개발자를 위한 서비스를 만드는 기획자로 일했고, 5년차가 되는 올해부터는 프로덕트 품질을 고민하는 Tech PM으로 일하고 있습니다. 일 잘하고 싶은 마음과 나를 지키고 싶은 욕심이 자주 충돌하지만, 가장 사랑하는 일을 최우선에 두며 삶을 살아가고 있습니다. 기록이 취미이자 특기입니다.",
     sessionDescription:
       "높은 품질의 프로덕트를 만들기 위해서는 어떤 고민이 필요할까요? 코드 품질, 문서 품질, 라이브 서비스 품질 등 프로덕트의 개발/운영 과정에서의 다양한 품질을 높이기 위해 고민하는 Tech PM의 이야기를 나눕니다.",
-    sessionTitle: "더 높은 프로덕트 품질을 고민하는 Tech PM의 일",
-    location: CONFERENCE_LOCATIOM.EVENT,
+    sessionTitle: "더 높은 프로덕트 품질을\n고민하는 Tech PM의 일",
+    location: CONFERENCE_LOCATIOM.MEDIA,
     sessionTime: SESSION_TIME.THIRD,
   },
   {
@@ -76,7 +76,7 @@ export const SPEAKERES_FULL = [
       "피상적인 문제만을 보기보다는 본질을 파악하고자 노력하고 다방면에 관심이 많고 도전하는 것을 좋아하는 개발자입니다.",
     sessionDescription:
       "직접 Reality Composer Pro로 간단한 3D 콘텐츠를 제작하고, 이 콘텐츠를 활용한 visionOS 앱을 만들어 Vision Pro 시뮬레이터에 실행시켜보며 새롭게 등장한 Vision Pro와 visionOS를 경험해봅니다.",
-    sessionTitle: "Vision Pro, visionOS 찍먹해보기!",
+    sessionTitle: "Vision Pro,\nvisionOS 찍먹해보기!",
     location: CONFERENCE_LOCATIOM.EVENT,
     sessionTime: SESSION_TIME.FORUTH,
   },
@@ -102,8 +102,8 @@ export const SPEAKERES_FULL = [
       "I am the Seoul iOS Meetup dude! I chat about code & startups often. Love fried chicken & singing. Yes, I really really talk a lot!",
     sessionDescription:
       "In 2022, Apple rejected 30% of app submissions. Gain insights for your app's seamless market entry.",
-    sessionTitle: "App Store Rejections and how to avoid them",
-    location: CONFERENCE_LOCATIOM.EVENT,
+    sessionTitle: "App Store Rejections and\nhow to avoid them",
+    location: CONFERENCE_LOCATIOM.MEDIA,
     sessionTime: SESSION_TIME.SECOND,
   },
   {
@@ -128,5 +128,20 @@ export const SPEAKERES_FULL = [
     sessionTitle: "우리 BDD해요",
     location: CONFERENCE_LOCATIOM.EVENT,
     sessionTime: SESSION_TIME.FIRST,
+  },
+];
+
+export const ORGANIZER_FULL = [
+  {
+    id: 7,
+    name: "도라",
+    company: "Apple Developer Academy \n @ POSTECH",
+    imageURL: "/syncswift2023/speaker/도라.png",
+    introduction: "물음표 해결에 집요한 보통의 디자이너",
+    sessionDescription:
+      "참가자들은 작게 팀을 만들고 Organizer의 가이딩을 따라 Apple의 Human Interface Guideline의 문서를 함께 스터디하고 사례를 수집한 후 세션 종료와 함께 한국의 애플 생태계 구성원들에게 결과물을 배포합니다! 애플 생태계의 구성원들이 내가 배포한 문서들을 참고하며 공부하고 일한다고 생각하면 너무 설레지 않나요?",
+    sessionTitle: "HIG 배포 대작전",
+    location: CONFERENCE_LOCATIOM.MEDIA,
+    sessionTime: SESSION_TIME.FORUTH,
   },
 ];
