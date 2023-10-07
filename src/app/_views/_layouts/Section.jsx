@@ -12,7 +12,11 @@ import AsyncLogo from "/public/logo.png";
 import Banner from "/public/syncswift2023/banner.png";
 import SyncSwift2023Logo from "/public/syncswift2023/sync2023-keylogo.png";
 import { Session, Title } from "../../../components";
-import { CONFERENCE, SPEAKERES_FULL } from "../../../utils/consts";
+import {
+  CONFERENCE,
+  ORGANIZER_FULL,
+  SPEAKERES_FULL,
+} from "../../../utils/consts";
 import Link from "next/link";
 import TimeTable from "../_domains/TimeTable";
 
@@ -155,14 +159,14 @@ const Program = () => {
         <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8">
           <Session title={"Part 3 Networking"} time={"pm6:00 - 9:00 (3hr)"} />
           <div className="w-full col-span-2 text-base md:text-xl opacity-80 max-md:mt-8">
-            <div>
-              아이폰 첫 발표와 같은 Apple의 하이라이트 영상을 함께 보며
-              참가자들의 이야기 보따리를 푸는 네트워킹이 진행됩니다.
-            </div>
-            <br />
-            <div>간단한 식사와 음료가 제공될 예정입니다 🍿</div>
+            <div>참가자들의 이야기 보따리를 푸는 네트워킹이 진행됩니다.</div>
           </div>
         </div>
+
+        <Session
+          title={""}
+          time={"※ pm5:00 - 6:00 경 간단한 먹을거리가 제공됩니다"}
+        />
       </div>
     </section>
   );
@@ -434,24 +438,21 @@ const Copyright = () => {
 const Organizer = () => {
   return (
     <section className="flex flex-col justify-center pb-20 mt-60">
-      <Title>Speaker</Title>
-      <div className="grid justify-center grid-flow-col grid-rows-2 mt-32 gap-x-5 gap-y-28 max-lg:grid-rows-3 max-md:grid-rows-4 max-md:gap-x-8">
-        {SPEAKERES_FULL.map(({ name, company, imageURL }, i) => (
+      <Title>Organizer</Title>
+      <div className="flex md:gap-[58px] gap-10 mt-20 flex-wrap justify-center">
+        {ORGANIZER_FULL.map(({ name, imageURL }, i) => (
           <div key={`${name}_${i}`} className="gap-4">
             <ul className="flex flex-col items-center gap-2 text-center">
               <div className="rounded-full bg-slate-50 bg-opacity-20 sm:w-[180px] sm:h-[180px] w-[120px] h-[120px]">
                 <Image
-                  alt={`연사자 ${name}님의 사진입니다.`}
+                  alt={`오거나이저 ${name}님의 사진입니다.`}
                   src={imageURL}
-                  className=""
+                  className="rounded-full"
                   width={180}
                   height={180}
                 ></Image>
               </div>
               <li className="mt-5 text-lg sm:text-xl">{name}</li>
-              <li className="whitespace-pre text-[#AFAFAF] leading-normal sm:text-lg text-xs">
-                {company}
-              </li>
             </ul>
           </div>
         ))}
@@ -475,10 +476,10 @@ export default function Section() {
       <div className="z-40 w-full max-w-[1200px] backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:pl-6  px-4 mt-48 py-52">
         <Ticket />
       </div>
-      <div className="z-40 w-full max-w-[1000px] flex flex-col mt-[347px] sm:px-[100px] px-4 backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl sm:py-52 py-20">
+      <div className="z-40 w-full max-w-[1200px] flex flex-col mt-[347px] sm:px-[100px] px-4 backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl sm:py-52 py-20">
         <Sponser />
         <Copyright />
-        {/* <Organizer /> */}
+        <Organizer />
       </div>
     </div>
   );
