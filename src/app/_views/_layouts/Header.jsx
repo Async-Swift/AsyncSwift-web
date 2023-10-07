@@ -10,7 +10,7 @@ import AppStore from "/public/sns-icons/appStore.png";
 
 export default function Header({}) {
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between w-full px-8 py-5 bg-black bg-opacity-60 sm:px-15 backdrop-blur-sm">
+    <header className="fixed top-0 z-50 flex items-center justify-between w-full px-8 py-5 bg-black bg-opacity-60 sm:px-15 backdrop-blur-sm">
       <div>
         <Image alt="AsyncSwift" src={AsyncSwiftLogo} width={200} height={40} />
       </div>

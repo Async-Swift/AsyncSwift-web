@@ -11,14 +11,10 @@ import YoutubeIcon from "/public/syncswift2023/sns-icon/youtube.png";
 import AsyncLogo from "/public/logo.png";
 import Banner from "/public/syncswift2023/banner.png";
 import SyncSwift2023Logo from "/public/syncswift2023/sync2023-keylogo.png";
-import {
-  Session,
-  TimeTableCard,
-  TimeTableTitle,
-  Title,
-} from "../../../components";
+import { Session, Title } from "../../../components";
 import { CONFERENCE, SPEAKERES_FULL } from "../../../utils/consts";
 import Link from "next/link";
+import TimeTable from "../_domains/TimeTable";
 
 const Description = () => {
   return (
@@ -47,7 +43,7 @@ const Description = () => {
 
 const Program = () => {
   return (
-    <section className="mt-60">
+    <section className="my-60">
       <Title>Programs</Title>
       <div className="flex flex-col items-center mt-10 text-sm font-light leading-relaxed text-center opacity-50 sm:text-xl">
         <div>
@@ -89,7 +85,7 @@ const Program = () => {
                 있습니다.
               </div>
             </div>
-            <div className="border border-[#d9d9d9] border-opacity-50 py-6 px-4  border-solid mt-6 rounded-lg bg-[#D9D9D9] bg-opacity-5">
+            {/* <div className="border border-[#d9d9d9] border-opacity-50 py-6 px-4  border-solid mt-6 rounded-lg bg-[#D9D9D9] bg-opacity-5">
               <div className="text-xs font-bold opacity-80 ">Event Wall</div>
               <div className="mt-2 text-2xl font-bold opacity-80">
                 Hello visionPro world
@@ -106,8 +102,8 @@ const Program = () => {
                   않나요?
                 </div>
               </div>
-            </div>
-            <div className="border border-[#D9D9D9] border-opacity-50 py-6 px-4  border-solid mt-6 rounded-lg bg-[#D9D9D9] bg-opacity-5">
+            </div> */}
+            {/* <div className="border border-[#D9D9D9] border-opacity-50 py-6 px-4  border-solid mt-6 rounded-lg bg-[#D9D9D9] bg-opacity-5">
               <div className="text-xs font-bold opacity-80 ">Media Wall</div>
               <div className="md:text-2xl text-[17px] font-bold opacity-80 mt-2 ">
                 HIG 배포 대작전
@@ -124,7 +120,7 @@ const Program = () => {
                   않나요?
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col md:grid md:grid-cols-3 md:gap-8">
@@ -148,7 +144,7 @@ const Speaker = () => {
     <section className="flex flex-col justify-center pb-20 mt-60">
       <Title>Speaker</Title>
       <div className="grid justify-center grid-flow-col grid-rows-2 mt-32 gap-x-5 gap-y-28 max-lg:grid-rows-3 max-md:grid-rows-4 max-md:gap-x-8">
-        {SPEAKERES_FULL.map(({ name, introduction, imageURL }, i) => (
+        {SPEAKERES_FULL.map(({ name, company, imageURL }, i) => (
           <div key={`${name}_${i}`} className="gap-4">
             <ul className="flex flex-col items-center gap-2 text-center">
               <div className="rounded-full bg-slate-50 bg-opacity-20 sm:w-[180px] sm:h-[180px] w-[120px] h-[120px]">
@@ -162,7 +158,7 @@ const Speaker = () => {
               </div>
               <li className="mt-5 text-lg sm:text-xl">{name}</li>
               <li className="whitespace-pre text-[#AFAFAF] leading-normal sm:text-lg text-xs">
-                {introduction}
+                {company}
               </li>
             </ul>
           </div>
@@ -181,116 +177,6 @@ const ConferenceMap = () => {
         src={ConferenceMapImage}
         width={1000}
       ></Image>
-    </section>
-  );
-};
-
-const TimeTable = () => {
-  return (
-    <section className="mt-[200px]">
-      <Title>Time Table</Title>
-      <div>
-        {/* Line 1 */}
-        <div className="flex gap-4 mt-20 ">
-          <div className="md:grow-0 md:block hidden w-[148px]"></div>
-          <div className="flex w-full gap-4 ">
-            <div className="flex items-center justify-center bg-[#D9D9D9] w-full h-16 text-black rounded-lg md:text-2xl text-[17px] font-bold">
-              Event Hall
-            </div>
-            <div className="flex items-center justify-center bg-[#D9D9D9] w-full h-16 text-black rounded-lg md:text-2xl text-[17px] font-bold">
-              Media Wall
-            </div>
-          </div>
-        </div>
-        {/* Line 2 */}
-        <TimeTableTitle>Part 1 Session</TimeTableTitle>
-        {/* Part 1 */}
-        <div className="flex flex-col gap-8">
-          <TimeTableCard
-            speakers={[{ name: "Organizer 데이지", title: "Opening" }, {}]}
-            time={"01:00 ~ 01:10"}
-          />
-          <TimeTableCard
-            speakers={[
-              { title: "우리 BDD해요", name: "Zeri" },
-              { title: "오늘도 PM이 안된다고 말했다.", name: "김현정" },
-            ]}
-            time={"01:10 - 01:40"}
-          />
-          <TimeTableCard
-            speakers={[
-              {
-                title: "App Store Rejections and how to avoid them",
-                name: "Florian Ludot",
-              },
-              {
-                title: "11년차 디자이너가 토스 \n 퇴사하고 하는 일",
-                name: "강영화",
-              },
-            ]}
-            time={"01:50 - 02:20"}
-          />
-          <TimeTableCard
-            speakers={[
-              {
-                title: "사이드 프로젝트가 메인 JOB이 되기까지의 이야기",
-                name: "박성은",
-              },
-              {
-                title: "더 높은 프로덕트 품질을 고민하는 Tech PM의 일",
-                name: "김민석",
-              },
-            ]}
-            time={"02:30 - 02:50"}
-          />
-        </div>
-        <TimeTableTitle>Part 2 Activity</TimeTableTitle>
-        <div className="flex flex-col gap-8">
-          <TimeTableCard
-            speakers={[
-              {
-                title: "Vision Pro, visionOS 찍먹해보기!",
-                name: "이민지",
-              },
-              { name: "도라", title: "HIG 배포 대작전" },
-            ]}
-            time={"03:10 - 04:00"}
-            timeCase={"전반부"}
-          />
-          <TimeTableCard
-            speakers={[
-              {
-                title: "Vision Pro, visionOS 찍먹해보기!",
-                name: "이민지",
-              },
-              { name: "도라", title: "HIG 배포 대작전" },
-            ]}
-            time={"04:10 - 05:00"}
-            timeCase={"후반부"}
-          />
-          <div className="flex gap-4 max-md:flex-col max-md:items-center ">
-            <div className="md:grow-0 flex md:w-[148px] items-center md:text-xl text-xs">
-              05:00 - 06:00
-            </div>
-            <div className="flex w-full p-4 border border-[#D9D9D9] opacity-50 border-solid rounded-lg">
-              쉬는 시간
-            </div>
-          </div>
-        </div>
-      </div>
-      <TimeTableTitle>Part 3 Networking</TimeTableTitle>
-      <div className="flex flex-col gap-8">
-        <TimeTableCard
-          speakers={[
-            {
-              title: "Networking",
-              name: "Organizer 커리",
-            },
-            {},
-          ]}
-          time={"06:00 - 09:00"}
-        />
-      </div>
     </section>
   );
 };
@@ -411,8 +297,8 @@ export default function Section() {
     <div className="flex flex-col items-center w-full h-full md:px-10">
       <div className="z-40 w-full max-w-[1200px] backdrop-blur-md  bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:px-6 px-4 lg:px-[100px]">
         <Description />
-        <Program />
         <Speaker />
+        <Program />
       </div>
       <div className="z-40 w-full max-w-[1200px] backdrop-blur-md bg-[#4A4A4A] bg-opacity-20 rounded-3xl flex flex-col md:pl-6  px-4 mt-48 py-52">
         <ConferenceMap />

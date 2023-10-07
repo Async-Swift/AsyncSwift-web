@@ -34,8 +34,8 @@ export default async function Page({}) {
     <main className="w-full">
       <div className="flex flex-col justify-between w-full h-full ">
         <Header />
-        {/* <Canvas /> */}
-        <div className="sticky top-0 flex items-center justify-center w-full pb-20 h-banner -z-50 ">
+        <Canvas />
+        <div className="fixed top-0 flex items-center justify-center w-full h-banner -z-50 ">
           <Image
             alt="syncswift2023 key design image"
             src={Banner}

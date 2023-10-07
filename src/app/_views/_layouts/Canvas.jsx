@@ -21,20 +21,19 @@ export default function Canvas() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const p5Instance = new p5(sketch, p5ContainerRef.current);
-      // On component creation, instantiate a p5 object with the sketch and container reference
-
-      // On component destruction, delete the p5 instance
-      return () => {
-        p5Instance.remove();
-      };
+      // const p5Instance = new p5(sketch, p5ContainerRef.current);
+      // // On component creation, instantiate a p5 object with the sketch and container reference
+      // // On component destruction, delete the p5 instance
+      // return () => {
+      //   p5Instance.remove();
+      // };
     }
   }, []);
 
   return (
     <section
-      ref={p5ContainerRef}
-      className="top-0 flex items-center justify-center w-full bg-red-200 h-banner bg-opacity-40 -z-50 animate-fadeIn"
+      // ref={p5ContainerRef}
+      className="top-0 flex items-center justify-center w-full h-screen bg-opacity-40 -z-50 animate-fadeIn"
     ></section>
   );
 }
