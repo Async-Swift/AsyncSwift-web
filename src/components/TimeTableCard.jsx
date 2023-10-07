@@ -27,7 +27,16 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
             Object.keys(speaker).length !== 0 ? (
               <div
                 key={speaker.name}
-                className="flex flex-col gap-2 p-4  bg-[#D9D9D9] w-full  rounded-lg bg-opacity-[15%] leading-relaxed border border-opacity-50 border-[#D9D9D9] border-solid"
+                className={`${
+                  showDescription === speaker.id
+                    ? "bg-[#0A0A0A]"
+                    : "bg-[#D9D9D9] bg-opacity-[15%]"
+                } flex flex-col gap-2 p-4  w-full  rounded-lg leading-relaxed border border-opacity-50 border-[#D9D9D9] border-solid ${
+                  speaker.sessionTitle === "Opening" ||
+                  speaker.sessionTitle === "Networking"
+                    ? ""
+                    : "hover:bg-[#0A0A0A]"
+                }`}
                 onClick={() => handleClick(speaker.id, showDescription)}
               >
                 <div className="text-sm leading-relaxed whitespace-pre-wrap md:text-2xl">
@@ -55,7 +64,7 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
         {speakers.map((speaker) => (
           <div
             key={speaker.sessionTitle}
-            className={`w-full border border-solid border-[#d9d9d9] border-opacity-50 rounded-lg px-6 py-4 ${
+            className={`w-full border border-solid border-[#d9d9d9] border-opacity-50 rounded-lg px-6 py-4 bg-[#0A0A0A] ${
               showDescription === speaker.id ? "block" : "hidden"
             }`}
           >

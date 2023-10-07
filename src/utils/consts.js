@@ -133,15 +133,93 @@ export const SPEAKERES_FULL = [
 
 export const ORGANIZER_FULL = [
   {
+    id: 1,
+    name: "고경섭",
+    imageURL: "/syncswift2023/organizer/고경섭.png",
+  },
+  {
+    id: 2,
+    name: "곽세진",
+    imageURL: "/syncswift2023/organizer/곽세진.png",
+  },
+  {
+    id: 3,
+    name: "김예빈",
+    imageURL: "/syncswift2023/organizer/김예빈.png",
+  },
+  {
+    id: 4,
+    name: "김은영",
+    imageURL: "/syncswift2023/organizer/김은영.png",
+  },
+  {
+    id: 5,
+    name: "김인섭",
+    imageURL: "/syncswift2023/organizer/김인섭.png",
+  },
+  {
+    id: 6,
+    name: "김하은",
+    imageURL: "/syncswift2023/organizer/김하은.png",
+  },
+  {
     id: 7,
-    name: "도라",
-    company: "Apple Developer Academy \n @ POSTECH",
-    imageURL: "/syncswift2023/speaker/도라.png",
-    introduction: "물음표 해결에 집요한 보통의 디자이너",
-    sessionDescription:
-      "참가자들은 작게 팀을 만들고 Organizer의 가이딩을 따라 Apple의 Human Interface Guideline의 문서를 함께 스터디하고 사례를 수집한 후 세션 종료와 함께 한국의 애플 생태계 구성원들에게 결과물을 배포합니다! 애플 생태계의 구성원들이 내가 배포한 문서들을 참고하며 공부하고 일한다고 생각하면 너무 설레지 않나요?",
-    sessionTitle: "HIG 배포 대작전",
-    location: CONFERENCE_LOCATIOM.MEDIA,
-    sessionTime: SESSION_TIME.FORUTH,
+    name: "송시원",
+    imageURL: "/syncswift2023/organizer/송시원.png",
+  },
+  {
+    id: 8,
+    name: "여니",
+    imageURL: "/syncswift2023/organizer/여니.png",
+  },
+  {
+    id: 9,
+    name: "윤성관",
+    imageURL: "/syncswift2023/organizer/윤성관.png",
+  },
+  {
+    id: 10,
+    name: "이민아",
+    imageURL: "/syncswift2023/organizer/이민아.png",
+  },
+  {
+    id: 11,
+    name: "이성노",
+    imageURL: "/syncswift2023/organizer/이성노.png",
+  },
+  {
+    id: 12,
+    name: "이수진",
+    imageURL: "/syncswift2023/organizer/이수진.png",
+  },
+  {
+    id: 13,
+    name: "이재웅",
+    imageURL: "/syncswift2023/organizer/이재웅.png",
+  },
+  {
+    id: 14,
+    name: "이현호",
+    imageURL: "/syncswift2023/organizer/이현호.png",
+  },
+  {
+    id: 15,
+    name: "최미진",
+    imageURL: "/syncswift2023/organizer/최미진.png",
+  },
+  {
+    id: 16,
+    name: "최인호",
+    imageURL: "/syncswift2023/organizer/최인호.png",
+  },
+  {
+    id: 17,
+    name: "최진욱",
+    imageURL: "/syncswift2023/organizer/최진욱.png",
+  },
+  {
+    id: 18,
+    name: "황예은",
+    imageURL: "/syncswift2023/organizer/황예은.png",
   },
 ];
