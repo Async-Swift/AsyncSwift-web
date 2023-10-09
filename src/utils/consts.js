@@ -51,7 +51,7 @@ export const SPEAKERES_FULL = [
     sessionDescription:
       "유저수 50만명, 앱스토어 투데이, 구글 플레이 올해를 빛낸 앱 선정! 독서기록 앱 북적북적을 만들며 경험한 4년간의 성장 이야기를 공유합니다.",
     sessionTitle: "사이드 프로젝트가\n메인 JOB이 되기까지의 이야기",
-    location: CONFERENCE_LOCATIOM.EVENT,
+    location: CONFERENCE_LOCATIOM.MEDIA,
     sessionTime: SESSION_TIME.THIRD,
   },
   {
@@ -64,7 +64,7 @@ export const SPEAKERES_FULL = [
     sessionDescription:
       "높은 품질의 프로덕트를 만들기 위해서는 어떤 고민이 필요할까요? 코드 품질, 문서 품질, 라이브 서비스 품질 등 프로덕트의 개발/운영 과정에서의 다양한 품질을 높이기 위해 고민하는 Tech PM의 이야기를 나눕니다.",
     sessionTitle: "더 높은 프로덕트 품질을\n고민하는 Tech PM의 일",
-    location: CONFERENCE_LOCATIOM.MEDIA,
+    location: CONFERENCE_LOCATIOM.EVENT,
     sessionTime: SESSION_TIME.THIRD,
   },
   {
