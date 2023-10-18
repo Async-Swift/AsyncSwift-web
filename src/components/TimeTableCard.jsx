@@ -23,10 +23,10 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
       </div>
       <div className="flex flex-col w-full gap-4">
         <div className="flex w-full gap-4">
-          {speakers.map((speaker) =>
+          {speakers.map((speaker, index) =>
             Object.keys(speaker).length !== 0 ? (
               <div
-                key={speaker.name}
+                key={speaker.name + index}
                 className={`${
                   showDescription === speaker.id
                     ? "bg-[#0A0A0A]"
@@ -43,7 +43,11 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
                   {speaker.sessionTitle}
                 </div>
                 <div className="text-xs opacity-50 md:text-lg max-md:flex max-md:justify-between">
-                  <div>{speaker.name}</div>
+                  <div>
+                    {speaker.name === "도라"
+                      ? `${speaker.name} & 리이오`
+                      : speaker.name}
+                  </div>
                   <div className="md:hidden ">
                     {speaker.id === showDescription ? (
                       <CgMathMinus />
@@ -55,15 +59,15 @@ const TimeTableCard = ({ speakers, showDescription, setShowDescription }) => {
               </div>
             ) : (
               <div
-                key={`blank : ${speaker.sessionTime}`}
+                key={`blank : ${speaker.sessionTime}_${index}`}
                 className="w-full p-4 rounded-lg border-dashed border border-opacity-50 border-[#D9D9D9]"
               ></div>
             )
           )}
         </div>
-        {speakers.map((speaker) => (
+        {speakers.map((speaker, index) => (
           <div
-            key={speaker.sessionTitle}
+            key={speaker.sessionTitle + index}
             className={`w-full border border-solid border-[#d9d9d9] border-opacity-50 rounded-lg px-6 py-4 bg-[#0A0A0A] ${
               showDescription === speaker.id ? "block" : "hidden"
             }`}

@@ -1,7 +1,8 @@
 import Image from "next/image";
 
 import ConferenceMapImage from "/public/syncswift2023/map/map.png";
-import OpenUpLogo from "/public/syncswift2023/sponsor/openup.png";
+import SponserSilver from "/public/syncswift2023/sponsor/silver.png";
+import SponserSpecial from "/public/syncswift2023/sponsor/special.png";
 import DiscordIcon from "/public/syncswift2023/sns-icon/discord.png";
 import InstagramIcon from "/public/syncswift2023/sns-icon/instagram.png";
 import LinkedInIcon from "/public/syncswift2023/sns-icon/linkedIn.png";
@@ -326,11 +327,24 @@ const Ticket = () => {
 
 const Sponser = () => {
   return (
-    <section>
+    <section className="">
       <Title>Sponsor</Title>
-      <div className="w-full bg-white h-[342px] flex justify-center items-center my-9 rounded-[32px]">
-        <div className="w-[329px] sm:h-[148px] h-[80px] flex justify-center items-center">
-          <Image alt="Sponsor openup logo picture" src={OpenUpLogo} />
+      <div className="w-full bg-white  flex justify-center items-center my-9 rounded-[32px] flex-col py-20 px-6 gap-[60px]">
+        <div className="flex flex-col items-center w-full gap-10 text-black">
+          <div className="border-b border-black border-solid pb-[18px] max-w-[720px] w-full sm:text-2xl text-[17px] font-bold">
+            실버 스폰서
+          </div>
+          <div className="flex items-center justify-center max-w-[405px] max-sm:px-10">
+            <Image alt="Sponsor openup logo picture" src={SponserSilver} />
+          </div>
+        </div>
+        <div className="flex flex-col items-center w-full gap-10 text-black">
+          <div className="border-b border-black border-solid pb-[18px] max-w-[720px] w-full sm:text-2xl text-[17px] font-bold">
+            스페셜 스폰서
+          </div>
+          <div className="flex items-center justify-center max-w-[405px] max-sm:px-10">
+            <Image alt="Sponsor openup logo picture" src={SponserSpecial} />
+          </div>
         </div>
       </div>
     </section>
