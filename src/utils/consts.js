@@ -14,7 +14,7 @@ export const ASYNCSWIFT = {
 
 export const CONFERENCE_LOCATIOM = {
   MEDIA: "Media Wall",
-  EVENT: "Event Wall",
+  EVENT: "Event Hall",
 };
 
 export const SESSION_TIME = {
@@ -120,7 +120,7 @@ export const SPEAKERES_FULL = [
   },
   {
     id: 8,
-    name: "Zeri",
+    name: "박예빈",
     company: "다양한 경험을 좋아하는 \n iOS 개발자입니다.",
     imageURL: "/syncswift2023/speaker/Zeri.png",
     introduction: "다양한 경험을 좋아하는 iOS 개발자입니다.",
@@ -142,11 +142,11 @@ export const ORGANIZER_FULL = [
     name: "곽세진",
     imageURL: "/syncswift2023/organizer/곽세진.png",
   },
-  {
-    id: 3,
-    name: "김예빈",
-    imageURL: "/syncswift2023/organizer/김예빈.png",
-  },
+  // {
+  //   id: 3,
+  //   name: "김예빈",
+  //   imageURL: "/syncswift2023/organizer/김예빈.png",
+  // },
   {
     id: 4,
     name: "김은영",
@@ -167,26 +167,26 @@ export const ORGANIZER_FULL = [
     name: "송시원",
     imageURL: "/syncswift2023/organizer/송시원.png",
   },
-  {
-    id: 8,
-    name: "여니",
-    imageURL: "/syncswift2023/organizer/여니.png",
-  },
-  {
-    id: 9,
-    name: "윤성관",
-    imageURL: "/syncswift2023/organizer/윤성관.png",
-  },
+  // {
+  //   id: 8,
+  //   name: "여니",
+  //   imageURL: "/syncswift2023/organizer/여니.png",
+  // },
+  // {
+  //   id: 9,
+  //   name: "윤성관",
+  //   imageURL: "/syncswift2023/organizer/윤성관.png",
+  // },
   {
     id: 10,
     name: "이민아",
     imageURL: "/syncswift2023/organizer/이민아.png",
   },
-  {
-    id: 11,
-    name: "이성노",
-    imageURL: "/syncswift2023/organizer/이성노.png",
-  },
+  // {
+  //   id: 11,
+  //   name: "이성노",
+  //   imageURL: "/syncswift2023/organizer/이성노.png",
+  // },
   {
     id: 12,
     name: "이수진",
@@ -197,21 +197,21 @@ export const ORGANIZER_FULL = [
     name: "이재웅",
     imageURL: "/syncswift2023/organizer/이재웅.png",
   },
-  {
-    id: 14,
-    name: "이현호",
-    imageURL: "/syncswift2023/organizer/이현호.png",
-  },
+  // {
+  //   id: 14,
+  //   name: "이현호",
+  //   imageURL: "/syncswift2023/organizer/이현호.png",
+  // },
   {
     id: 15,
     name: "최미진",
     imageURL: "/syncswift2023/organizer/최미진.png",
   },
-  {
-    id: 16,
-    name: "최인호",
-    imageURL: "/syncswift2023/organizer/최인호.png",
-  },
+  // {
+  //   id: 16,
+  //   name: "최인호",
+  //   imageURL: "/syncswift2023/organizer/최인호.png",
+  // },
   {
     id: 17,
     name: "최진욱",
